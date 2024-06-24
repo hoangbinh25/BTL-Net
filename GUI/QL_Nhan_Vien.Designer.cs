@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            btn_nhan_vien = new Button();
             panel1 = new Panel();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
+            btn_dang_xuat = new Button();
+            btn_muon_tra = new Button();
+            btn_doc_gia = new Button();
+            btn_kho_sach = new Button();
             groupBox1 = new GroupBox();
             groupBox2 = new GroupBox();
             dgv_ds_nhan_vien = new DataGridView();
@@ -54,15 +54,16 @@
             panel2.SuspendLayout();
             SuspendLayout();
             // 
-            // button1
+            // btn_nhan_vien
             // 
-            button1.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(14, 15);
-            button1.Name = "button1";
-            button1.Size = new Size(190, 33);
-            button1.TabIndex = 0;
-            button1.Text = "Nhân Viên";
-            button1.UseVisualStyleBackColor = true;
+            btn_nhan_vien.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_nhan_vien.Location = new Point(14, 15);
+            btn_nhan_vien.Name = "btn_nhan_vien";
+            btn_nhan_vien.Size = new Size(190, 33);
+            btn_nhan_vien.TabIndex = 0;
+            btn_nhan_vien.Text = "Nhân Viên";
+            btn_nhan_vien.UseVisualStyleBackColor = true;
+            btn_nhan_vien.Click += btn_nhan_vien_Click;
             // 
             // panel1
             // 
@@ -70,56 +71,60 @@
             panel1.BackgroundImage = Properties.Resources.xanhtimdocmmm;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
             panel1.BorderStyle = BorderStyle.Fixed3D;
-            panel1.Controls.Add(button5);
-            panel1.Controls.Add(button4);
-            panel1.Controls.Add(button3);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(btn_dang_xuat);
+            panel1.Controls.Add(btn_muon_tra);
+            panel1.Controls.Add(btn_doc_gia);
+            panel1.Controls.Add(btn_kho_sach);
+            panel1.Controls.Add(btn_nhan_vien);
             panel1.ForeColor = SystemColors.ControlText;
             panel1.Location = new Point(2, -3);
             panel1.Name = "panel1";
             panel1.Size = new Size(227, 581);
             panel1.TabIndex = 4;
             // 
-            // button5
+            // btn_dang_xuat
             // 
-            button5.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button5.Location = new Point(14, 531);
-            button5.Name = "button5";
-            button5.Size = new Size(190, 33);
-            button5.TabIndex = 4;
-            button5.Text = "Đăng Xuất";
-            button5.UseVisualStyleBackColor = true;
+            btn_dang_xuat.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_dang_xuat.Location = new Point(14, 531);
+            btn_dang_xuat.Name = "btn_dang_xuat";
+            btn_dang_xuat.Size = new Size(190, 33);
+            btn_dang_xuat.TabIndex = 4;
+            btn_dang_xuat.Text = "Đăng Xuất";
+            btn_dang_xuat.UseVisualStyleBackColor = true;
+            btn_dang_xuat.Click += btn_dang_xuat_Click;
             // 
-            // button4
+            // btn_muon_tra
             // 
-            button4.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.Location = new Point(14, 173);
-            button4.Name = "button4";
-            button4.Size = new Size(190, 33);
-            button4.TabIndex = 3;
-            button4.Text = "Mượn Trả";
-            button4.UseVisualStyleBackColor = true;
+            btn_muon_tra.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_muon_tra.Location = new Point(14, 173);
+            btn_muon_tra.Name = "btn_muon_tra";
+            btn_muon_tra.Size = new Size(190, 33);
+            btn_muon_tra.TabIndex = 3;
+            btn_muon_tra.Text = "Mượn Trả";
+            btn_muon_tra.UseVisualStyleBackColor = true;
+            btn_muon_tra.Click += btn_muon_tra_Click;
             // 
-            // button3
+            // btn_doc_gia
             // 
-            button3.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(14, 119);
-            button3.Name = "button3";
-            button3.Size = new Size(190, 33);
-            button3.TabIndex = 2;
-            button3.Text = "Độc Giả";
-            button3.UseVisualStyleBackColor = true;
+            btn_doc_gia.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_doc_gia.Location = new Point(14, 119);
+            btn_doc_gia.Name = "btn_doc_gia";
+            btn_doc_gia.Size = new Size(190, 33);
+            btn_doc_gia.TabIndex = 2;
+            btn_doc_gia.Text = "Độc Giả";
+            btn_doc_gia.UseVisualStyleBackColor = true;
+            btn_doc_gia.Click += btn_doc_gia_Click;
             // 
-            // button2
+            // btn_kho_sach
             // 
-            button2.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(14, 66);
-            button2.Name = "button2";
-            button2.Size = new Size(190, 33);
-            button2.TabIndex = 1;
-            button2.Text = "Kho Sách";
-            button2.UseVisualStyleBackColor = true;
+            btn_kho_sach.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_kho_sach.Location = new Point(14, 66);
+            btn_kho_sach.Name = "btn_kho_sach";
+            btn_kho_sach.Size = new Size(190, 33);
+            btn_kho_sach.TabIndex = 1;
+            btn_kho_sach.Text = "Kho Sách";
+            btn_kho_sach.UseVisualStyleBackColor = true;
+            btn_kho_sach.Click += btn_kho_sach_Click;
             // 
             // groupBox1
             // 
@@ -308,12 +313,12 @@
 
         #endregion
 
-        private Button button1;
+        private Button btn_nhan_vien;
         private Panel panel1;
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private Button button5;
+        private Button btn_muon_tra;
+        private Button btn_doc_gia;
+        private Button btn_kho_sach;
+        private Button btn_dang_xuat;
         private GroupBox groupBox1;
         private Panel panel2;
         private Label label2;

@@ -16,5 +16,30 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void btn_nhan_vien_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_kho_sach_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_doc_gia_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_muon_tra_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_dang_xuat_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

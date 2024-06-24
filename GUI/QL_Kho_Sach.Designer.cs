@@ -36,33 +36,38 @@
             label2 = new Label();
             label2222 = new Label();
             groupBox2 = new GroupBox();
-            dgv_ds_nhan_vien = new DataGridView();
+            dgv_kho_sach = new DataGridView();
             panel2 = new Panel();
-            txt_ma_sach = new TextBox();
-            groupBox1 = new GroupBox();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            panel1 = new Panel();
-            button1 = new Button();
-            button6 = new Button();
-            cbb_vai_tro = new ComboBox();
-            textBox1 = new TextBox();
-            label4 = new Label();
-            textBox2 = new TextBox();
-            label5 = new Label();
-            textBox3 = new TextBox();
-            label6 = new Label();
-            textBox4 = new TextBox();
-            label7 = new Label();
-            label1 = new Label();
-            comboBox1 = new ComboBox();
+            panel3 = new Panel();
+            rdo_nu = new RadioButton();
+            rdo_nam = new RadioButton();
+            label9 = new Label();
             txt_tac_gia = new TextBox();
             label8 = new Label();
+            txt_so_luong = new TextBox();
+            label6 = new Label();
+            txt_nha_xuat_ban = new TextBox();
+            label7 = new Label();
+            txt_gia_bia = new TextBox();
+            label4 = new Label();
+            txt_ngay_nhap = new TextBox();
+            label5 = new Label();
+            cbb_ngon_ngu = new ComboBox();
+            label1 = new Label();
+            button6 = new Button();
+            cbb_the_loai = new ComboBox();
+            txt_ma_sach = new TextBox();
+            groupBox1 = new GroupBox();
+            btn_dang_xuat = new Button();
+            btn_muon_tra = new Button();
+            btn_doc_gia = new Button();
+            btn_kho_sach = new Button();
+            panel1 = new Panel();
+            btn_nhan_vien = new Button();
             groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgv_ds_nhan_vien).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgv_kho_sach).BeginInit();
             panel2.SuspendLayout();
+            panel3.SuspendLayout();
             groupBox1.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -131,9 +136,9 @@
             label3.ForeColor = Color.White;
             label3.Location = new Point(4, 218);
             label3.Name = "label3";
-            label3.Size = new Size(70, 28);
+            label3.Size = new Size(84, 28);
             label3.TabIndex = 6;
-            label3.Text = "Vai Trò";
+            label3.Text = "Thể Loại";
             // 
             // label2
             // 
@@ -159,9 +164,9 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(dgv_ds_nhan_vien);
+            groupBox2.Controls.Add(dgv_kho_sach);
             groupBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBox2.Location = new Point(28, 506);
+            groupBox2.Location = new Point(28, 499);
             groupBox2.Name = "groupBox2";
             groupBox2.RightToLeft = RightToLeft.Yes;
             groupBox2.Size = new Size(1079, 273);
@@ -169,39 +174,40 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Kết quả";
             // 
-            // dgv_ds_nhan_vien
+            // dgv_kho_sach
             // 
-            dgv_ds_nhan_vien.AllowUserToAddRows = false;
-            dgv_ds_nhan_vien.AllowUserToDeleteRows = false;
-            dgv_ds_nhan_vien.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv_ds_nhan_vien.Location = new Point(0, 27);
-            dgv_ds_nhan_vien.Name = "dgv_ds_nhan_vien";
-            dgv_ds_nhan_vien.ReadOnly = true;
-            dgv_ds_nhan_vien.RowHeadersWidth = 51;
-            dgv_ds_nhan_vien.Size = new Size(1079, 236);
-            dgv_ds_nhan_vien.TabIndex = 0;
+            dgv_kho_sach.AllowUserToAddRows = false;
+            dgv_kho_sach.AllowUserToDeleteRows = false;
+            dgv_kho_sach.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgv_kho_sach.Location = new Point(0, 27);
+            dgv_kho_sach.Name = "dgv_kho_sach";
+            dgv_kho_sach.ReadOnly = true;
+            dgv_kho_sach.RowHeadersWidth = 51;
+            dgv_kho_sach.Size = new Size(1079, 236);
+            dgv_kho_sach.TabIndex = 0;
             // 
             // panel2
             // 
             panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(panel3);
             panel2.Controls.Add(txt_tac_gia);
             panel2.Controls.Add(label8);
-            panel2.Controls.Add(textBox3);
+            panel2.Controls.Add(txt_so_luong);
             panel2.Controls.Add(label6);
-            panel2.Controls.Add(textBox4);
+            panel2.Controls.Add(txt_nha_xuat_ban);
             panel2.Controls.Add(label7);
-            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(txt_gia_bia);
             panel2.Controls.Add(label4);
-            panel2.Controls.Add(textBox2);
+            panel2.Controls.Add(txt_ngay_nhap);
             panel2.Controls.Add(label5);
-            panel2.Controls.Add(comboBox1);
+            panel2.Controls.Add(cbb_ngon_ngu);
             panel2.Controls.Add(label1);
             panel2.Controls.Add(button6);
             panel2.Controls.Add(btn_xoa);
             panel2.Controls.Add(btn_sua);
             panel2.Controls.Add(btn_them);
             panel2.Controls.Add(txt_ten_sach);
-            panel2.Controls.Add(cbb_vai_tro);
+            panel2.Controls.Add(cbb_the_loai);
             panel2.Controls.Add(label3);
             panel2.Controls.Add(label2);
             panel2.Controls.Add(txt_ma_sach);
@@ -209,8 +215,198 @@
             panel2.ForeColor = SystemColors.ButtonFace;
             panel2.Location = new Point(28, 40);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1079, 460);
+            panel2.Size = new Size(1079, 448);
             panel2.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(rdo_nu);
+            panel3.Controls.Add(rdo_nam);
+            panel3.Controls.Add(label9);
+            panel3.Location = new Point(540, 294);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(495, 76);
+            panel3.TabIndex = 25;
+            // 
+            // rdo_nu
+            // 
+            rdo_nu.AutoSize = true;
+            rdo_nu.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rdo_nu.Location = new Point(147, 39);
+            rdo_nu.Name = "rdo_nu";
+            rdo_nu.Size = new Size(60, 32);
+            rdo_nu.TabIndex = 28;
+            rdo_nu.TabStop = true;
+            rdo_nu.Text = "Nữ";
+            rdo_nu.UseVisualStyleBackColor = true;
+            // 
+            // rdo_nam
+            // 
+            rdo_nam.AutoSize = true;
+            rdo_nam.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rdo_nam.Location = new Point(37, 36);
+            rdo_nam.Name = "rdo_nam";
+            rdo_nam.Size = new Size(75, 32);
+            rdo_nam.TabIndex = 27;
+            rdo_nam.TabStop = true;
+            rdo_nam.Text = "Nam";
+            rdo_nam.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.White;
+            label9.Location = new Point(3, 5);
+            label9.Name = "label9";
+            label9.Size = new Size(96, 28);
+            label9.TabIndex = 26;
+            label9.Text = "Số Lượng";
+            // 
+            // txt_tac_gia
+            // 
+            txt_tac_gia.BackColor = SystemColors.Control;
+            txt_tac_gia.Location = new Point(26, 181);
+            txt_tac_gia.Multiline = true;
+            txt_tac_gia.Name = "txt_tac_gia";
+            txt_tac_gia.Size = new Size(472, 34);
+            txt_tac_gia.TabIndex = 24;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(3, 150);
+            label8.Name = "label8";
+            label8.Size = new Size(73, 28);
+            label8.TabIndex = 23;
+            label8.Text = "Tác Giả";
+            // 
+            // txt_so_luong
+            // 
+            txt_so_luong.BackColor = SystemColors.Control;
+            txt_so_luong.Location = new Point(563, 252);
+            txt_so_luong.Multiline = true;
+            txt_so_luong.Name = "txt_so_luong";
+            txt_so_luong.Size = new Size(472, 34);
+            txt_so_luong.TabIndex = 22;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(540, 221);
+            label6.Name = "label6";
+            label6.Size = new Size(96, 28);
+            label6.TabIndex = 21;
+            label6.Text = "Số Lượng";
+            // 
+            // txt_nha_xuat_ban
+            // 
+            txt_nha_xuat_ban.BackColor = SystemColors.Control;
+            txt_nha_xuat_ban.Location = new Point(563, 181);
+            txt_nha_xuat_ban.Multiline = true;
+            txt_nha_xuat_ban.Name = "txt_nha_xuat_ban";
+            txt_nha_xuat_ban.Size = new Size(472, 34);
+            txt_nha_xuat_ban.TabIndex = 20;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(540, 149);
+            label7.Name = "label7";
+            label7.Size = new Size(130, 28);
+            label7.TabIndex = 19;
+            label7.Text = "Nhà Xuất Bản";
+            // 
+            // txt_gia_bia
+            // 
+            txt_gia_bia.BackColor = SystemColors.Control;
+            txt_gia_bia.Location = new Point(563, 104);
+            txt_gia_bia.Multiline = true;
+            txt_gia_bia.Name = "txt_gia_bia";
+            txt_gia_bia.Size = new Size(472, 34);
+            txt_gia_bia.TabIndex = 18;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(540, 73);
+            label4.Name = "label4";
+            label4.Size = new Size(72, 28);
+            label4.TabIndex = 17;
+            label4.Text = "Giá Bìa";
+            // 
+            // txt_ngay_nhap
+            // 
+            txt_ngay_nhap.BackColor = SystemColors.Control;
+            txt_ngay_nhap.Location = new Point(563, 33);
+            txt_ngay_nhap.Multiline = true;
+            txt_ngay_nhap.Name = "txt_ngay_nhap";
+            txt_ngay_nhap.Size = new Size(472, 34);
+            txt_ngay_nhap.TabIndex = 16;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(540, 1);
+            label5.Name = "label5";
+            label5.Size = new Size(112, 28);
+            label5.TabIndex = 15;
+            label5.Text = "Ngày Nhập";
+            // 
+            // cbb_ngon_ngu
+            // 
+            cbb_ngon_ngu.BackColor = SystemColors.Control;
+            cbb_ngon_ngu.FormattingEnabled = true;
+            cbb_ngon_ngu.Location = new Point(26, 325);
+            cbb_ngon_ngu.Name = "cbb_ngon_ngu";
+            cbb_ngon_ngu.Size = new Size(472, 45);
+            cbb_ngon_ngu.TabIndex = 14;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(4, 294);
+            label1.Name = "label1";
+            label1.Size = new Size(106, 28);
+            label1.TabIndex = 13;
+            label1.Text = "Ngôn Ngữ";
+            // 
+            // button6
+            // 
+            button6.Cursor = Cursors.Hand;
+            button6.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button6.ForeColor = Color.Black;
+            button6.Image = Properties.Resources.z5560539339010_ef792d56ebbc8998d0d577435891ae63;
+            button6.ImageAlign = ContentAlignment.MiddleLeft;
+            button6.Location = new Point(935, 402);
+            button6.Name = "button6";
+            button6.Padding = new Padding(10, 5, 5, 5);
+            button6.Size = new Size(100, 41);
+            button6.TabIndex = 12;
+            button6.Text = "Bỏ Qua";
+            button6.TextAlign = ContentAlignment.MiddleRight;
+            button6.UseVisualStyleBackColor = true;
+            // 
+            // cbb_the_loai
+            // 
+            cbb_the_loai.BackColor = SystemColors.Control;
+            cbb_the_loai.FormattingEnabled = true;
+            cbb_the_loai.Location = new Point(26, 247);
+            cbb_the_loai.Name = "cbb_the_loai";
+            cbb_the_loai.Size = new Size(472, 45);
+            cbb_the_loai.TabIndex = 7;
             // 
             // txt_ma_sach
             // 
@@ -235,45 +431,45 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Quản Lý Kho Sách";
             // 
-            // button5
+            // btn_dang_xuat
             // 
-            button5.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button5.Location = new Point(14, 737);
-            button5.Name = "button5";
-            button5.Size = new Size(190, 33);
-            button5.TabIndex = 4;
-            button5.Text = "Đăng Xuất";
-            button5.UseVisualStyleBackColor = true;
+            btn_dang_xuat.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_dang_xuat.Location = new Point(14, 737);
+            btn_dang_xuat.Name = "btn_dang_xuat";
+            btn_dang_xuat.Size = new Size(190, 33);
+            btn_dang_xuat.TabIndex = 4;
+            btn_dang_xuat.Text = "Đăng Xuất";
+            btn_dang_xuat.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btn_muon_tra
             // 
-            button4.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.Location = new Point(14, 173);
-            button4.Name = "button4";
-            button4.Size = new Size(190, 33);
-            button4.TabIndex = 3;
-            button4.Text = "Mượn Trả";
-            button4.UseVisualStyleBackColor = true;
+            btn_muon_tra.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_muon_tra.Location = new Point(14, 173);
+            btn_muon_tra.Name = "btn_muon_tra";
+            btn_muon_tra.Size = new Size(190, 33);
+            btn_muon_tra.TabIndex = 3;
+            btn_muon_tra.Text = "Mượn Trả";
+            btn_muon_tra.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btn_doc_gia
             // 
-            button3.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(14, 119);
-            button3.Name = "button3";
-            button3.Size = new Size(190, 33);
-            button3.TabIndex = 2;
-            button3.Text = "Độc Giả";
-            button3.UseVisualStyleBackColor = true;
+            btn_doc_gia.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_doc_gia.Location = new Point(14, 119);
+            btn_doc_gia.Name = "btn_doc_gia";
+            btn_doc_gia.Size = new Size(190, 33);
+            btn_doc_gia.TabIndex = 2;
+            btn_doc_gia.Text = "Độc Giả";
+            btn_doc_gia.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn_kho_sach
             // 
-            button2.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(14, 66);
-            button2.Name = "button2";
-            button2.Size = new Size(190, 33);
-            button2.TabIndex = 1;
-            button2.Text = "Kho Sách";
-            button2.UseVisualStyleBackColor = true;
+            btn_kho_sach.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_kho_sach.Location = new Point(14, 66);
+            btn_kho_sach.Name = "btn_kho_sach";
+            btn_kho_sach.Size = new Size(190, 33);
+            btn_kho_sach.TabIndex = 1;
+            btn_kho_sach.Text = "Kho Sách";
+            btn_kho_sach.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -281,171 +477,26 @@
             panel1.BackgroundImage = Properties.Resources.xanhtimdocmmm;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
             panel1.BorderStyle = BorderStyle.Fixed3D;
-            panel1.Controls.Add(button5);
-            panel1.Controls.Add(button4);
-            panel1.Controls.Add(button3);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(btn_dang_xuat);
+            panel1.Controls.Add(btn_muon_tra);
+            panel1.Controls.Add(btn_doc_gia);
+            panel1.Controls.Add(btn_kho_sach);
+            panel1.Controls.Add(btn_nhan_vien);
             panel1.ForeColor = SystemColors.ControlText;
             panel1.Location = new Point(2, 1);
             panel1.Name = "panel1";
             panel1.Size = new Size(227, 792);
             panel1.TabIndex = 6;
             // 
-            // button1
+            // btn_nhan_vien
             // 
-            button1.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(14, 15);
-            button1.Name = "button1";
-            button1.Size = new Size(190, 33);
-            button1.TabIndex = 0;
-            button1.Text = "Nhân Viên";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            button6.Cursor = Cursors.Hand;
-            button6.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button6.ForeColor = Color.Black;
-            button6.Image = Properties.Resources.z5560539339010_ef792d56ebbc8998d0d577435891ae63;
-            button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(974, 400);
-            button6.Name = "button6";
-            button6.Padding = new Padding(10, 5, 5, 5);
-            button6.Size = new Size(100, 41);
-            button6.TabIndex = 12;
-            button6.Text = "Bỏ Qua";
-            button6.TextAlign = ContentAlignment.MiddleRight;
-            button6.UseVisualStyleBackColor = true;
-            // 
-            // cbb_vai_tro
-            // 
-            cbb_vai_tro.BackColor = SystemColors.Control;
-            cbb_vai_tro.FormattingEnabled = true;
-            cbb_vai_tro.Location = new Point(26, 247);
-            cbb_vai_tro.Name = "cbb_vai_tro";
-            cbb_vai_tro.Size = new Size(472, 45);
-            cbb_vai_tro.TabIndex = 7;
-            // 
-            // textBox1
-            // 
-            textBox1.BackColor = SystemColors.Control;
-            textBox1.Location = new Point(563, 104);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(472, 34);
-            textBox1.TabIndex = 18;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(540, 73);
-            label4.Name = "label4";
-            label4.Size = new Size(87, 28);
-            label4.TabIndex = 17;
-            label4.Text = "Tên Sách";
-            // 
-            // textBox2
-            // 
-            textBox2.BackColor = SystemColors.Control;
-            textBox2.Location = new Point(563, 33);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(472, 34);
-            textBox2.TabIndex = 16;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.White;
-            label5.Location = new Point(540, 1);
-            label5.Name = "label5";
-            label5.Size = new Size(86, 28);
-            label5.TabIndex = 15;
-            label5.Text = "Mã Sách";
-            // 
-            // textBox3
-            // 
-            textBox3.BackColor = SystemColors.Control;
-            textBox3.Location = new Point(563, 252);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(472, 34);
-            textBox3.TabIndex = 22;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(540, 221);
-            label6.Name = "label6";
-            label6.Size = new Size(87, 28);
-            label6.TabIndex = 21;
-            label6.Text = "Tên Sách";
-            // 
-            // textBox4
-            // 
-            textBox4.BackColor = SystemColors.Control;
-            textBox4.Location = new Point(563, 181);
-            textBox4.Multiline = true;
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(472, 34);
-            textBox4.TabIndex = 20;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(540, 149);
-            label7.Name = "label7";
-            label7.Size = new Size(86, 28);
-            label7.TabIndex = 19;
-            label7.Text = "Mã Sách";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(4, 294);
-            label1.Name = "label1";
-            label1.Size = new Size(70, 28);
-            label1.TabIndex = 13;
-            label1.Text = "Vai Trò";
-            // 
-            // comboBox1
-            // 
-            comboBox1.BackColor = SystemColors.Control;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(26, 325);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(472, 45);
-            comboBox1.TabIndex = 14;
-            // 
-            // txt_tac_gia
-            // 
-            txt_tac_gia.BackColor = SystemColors.Control;
-            txt_tac_gia.Location = new Point(26, 181);
-            txt_tac_gia.Multiline = true;
-            txt_tac_gia.Name = "txt_tac_gia";
-            txt_tac_gia.Size = new Size(472, 34);
-            txt_tac_gia.TabIndex = 24;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.ForeColor = Color.White;
-            label8.Location = new Point(3, 150);
-            label8.Name = "label8";
-            label8.Size = new Size(73, 28);
-            label8.TabIndex = 23;
-            label8.Text = "Tác Giả";
+            btn_nhan_vien.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_nhan_vien.Location = new Point(14, 15);
+            btn_nhan_vien.Name = "btn_nhan_vien";
+            btn_nhan_vien.Size = new Size(190, 33);
+            btn_nhan_vien.TabIndex = 0;
+            btn_nhan_vien.Text = "Nhân Viên";
+            btn_nhan_vien.UseVisualStyleBackColor = true;
             // 
             // QL_Kho_Sach
             // 
@@ -459,9 +510,11 @@
             Name = "QL_Kho_Sach";
             Text = "QL_Kho_Sach";
             groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dgv_ds_nhan_vien).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgv_kho_sach).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             groupBox1.ResumeLayout(false);
             panel1.ResumeLayout(false);
             ResumeLayout(false);
@@ -477,29 +530,33 @@
         private Label label2;
         private Label label2222;
         private GroupBox groupBox2;
-        private DataGridView dgv_ds_nhan_vien;
+        private DataGridView dgv_kho_sach;
         private Panel panel2;
         private TextBox txt_ma_sach;
         private GroupBox groupBox1;
-        private Button button5;
-        private Button button4;
-        private Button button3;
-        private Button button2;
+        private Button btn_dang_xuat;
+        private Button btn_muon_tra;
+        private Button btn_doc_gia;
+        private Button btn_kho_sach;
         private Panel panel1;
-        private Button button1;
+        private Button btn_nhan_vien;
         private Button button6;
-        private ComboBox cbb_vai_tro;
+        private ComboBox cbb_the_loai;
         private TextBox txt_tac_gia;
         private Label label8;
-        private TextBox textBox3;
+        private TextBox txt_so_luong;
         private Label label6;
-        private TextBox textBox4;
+        private TextBox txt_nha_xuat_ban;
         private Label label7;
-        private TextBox textBox1;
+        private TextBox txt_gia_bia;
         private Label label4;
-        private TextBox textBox2;
+        private TextBox txt_ngay_nhap;
         private Label label5;
-        private ComboBox comboBox1;
+        private ComboBox cbb_ngon_ngu;
         private Label label1;
+        private Panel panel3;
+        private RadioButton rdo_nu;
+        private RadioButton rdo_nam;
+        private Label label9;
     }
 }
