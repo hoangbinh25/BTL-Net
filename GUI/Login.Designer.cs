@@ -44,8 +44,13 @@
             // txt_ten_nguoi_dung
             // 
             txt_ten_nguoi_dung.BackColor = SystemColors.Control;
+<<<<<<< HEAD
             txt_ten_nguoi_dung.Location = new Point(15, 69);
             txt_ten_nguoi_dung.Margin = new Padding(3, 2, 3, 2);
+=======
+            txt_ten_nguoi_dung.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txt_ten_nguoi_dung.Location = new Point(17, 92);
+>>>>>>> 387c3d2d6af0415096639c91c5143048764ce74a
             txt_ten_nguoi_dung.Multiline = true;
             txt_ten_nguoi_dung.Name = "txt_ten_nguoi_dung";
             txt_ten_nguoi_dung.Size = new Size(494, 41);
@@ -87,9 +92,15 @@
             lb_dang_ki.AutoSize = true;
             lb_dang_ki.Font = new Font("Segoe UI Semilight", 10.8F, FontStyle.Italic, GraphicsUnit.Point, 0);
             lb_dang_ki.ForeColor = SystemColors.Highlight;
+<<<<<<< HEAD
             lb_dang_ki.Location = new Point(381, 326);
             lb_dang_ki.Name = "lb_dang_ki";
             lb_dang_ki.Size = new Size(110, 20);
+=======
+            lb_dang_ki.Location = new Point(435, 435);
+            lb_dang_ki.Name = "lb_dang_ki";
+            lb_dang_ki.Size = new Size(136, 25);
+>>>>>>> 387c3d2d6af0415096639c91c5143048764ce74a
             lb_dang_ki.TabIndex = 6;
             lb_dang_ki.Text = "Đăng Kí Tại Đây";
             // 
@@ -112,8 +123,13 @@
             // txt_mat_khau
             // 
             txt_mat_khau.BackColor = SystemColors.Control;
+<<<<<<< HEAD
             txt_mat_khau.Location = new Point(16, 146);
             txt_mat_khau.Margin = new Padding(3, 2, 3, 2);
+=======
+            txt_mat_khau.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txt_mat_khau.Location = new Point(18, 194);
+>>>>>>> 387c3d2d6af0415096639c91c5143048764ce74a
             txt_mat_khau.Multiline = true;
             txt_mat_khau.Name = "txt_mat_khau";
             txt_mat_khau.Size = new Size(494, 41);
@@ -149,9 +165,14 @@
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.ForeColor = SystemColors.ControlText;
             panel1.Location = new Point(-1, 1);
+<<<<<<< HEAD
             panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
             panel1.Size = new Size(199, 419);
+=======
+            panel1.Name = "panel1";
+            panel1.Size = new Size(227, 557);
+>>>>>>> 387c3d2d6af0415096639c91c5143048764ce74a
             panel1.TabIndex = 3;
             // 
             // form_dang_nhap
@@ -163,6 +184,7 @@
             Controls.Add(panel1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "form_dang_nhap";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
             groupBox1.ResumeLayout(false);
             panel3.ResumeLayout(false);
