@@ -42,8 +42,6 @@
             btn_sua = new Button();
             btn_them = new Button();
             txt_mat_khau = new TextBox();
-            cbb_vai_tro = new ComboBox();
-            label3 = new Label();
             label2 = new Label();
             txt_ten_nguoi_dung = new TextBox();
             label1 = new Label();
@@ -144,6 +142,7 @@
             // 
             groupBox2.Controls.Add(dgv_ds_nhan_vien);
             groupBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox2.ForeColor = Color.White;
             groupBox2.Location = new Point(33, 291);
             groupBox2.Name = "groupBox2";
             groupBox2.RightToLeft = RightToLeft.Yes;
@@ -171,8 +170,6 @@
             panel2.Controls.Add(btn_sua);
             panel2.Controls.Add(btn_them);
             panel2.Controls.Add(txt_mat_khau);
-            panel2.Controls.Add(cbb_vai_tro);
-            panel2.Controls.Add(label3);
             panel2.Controls.Add(label2);
             panel2.Controls.Add(txt_ten_nguoi_dung);
             panel2.Controls.Add(label1);
@@ -233,31 +230,12 @@
             // txt_mat_khau
             // 
             txt_mat_khau.BackColor = SystemColors.Control;
+            txt_mat_khau.Font = new Font("Segoe UI", 12F);
             txt_mat_khau.Location = new Point(26, 104);
             txt_mat_khau.Multiline = true;
             txt_mat_khau.Name = "txt_mat_khau";
             txt_mat_khau.Size = new Size(606, 34);
             txt_mat_khau.TabIndex = 8;
-            // 
-            // cbb_vai_tro
-            // 
-            cbb_vai_tro.BackColor = SystemColors.Control;
-            cbb_vai_tro.FormattingEnabled = true;
-            cbb_vai_tro.Location = new Point(26, 180);
-            cbb_vai_tro.Name = "cbb_vai_tro";
-            cbb_vai_tro.Size = new Size(606, 45);
-            cbb_vai_tro.TabIndex = 7;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(4, 144);
-            label3.Name = "label3";
-            label3.Size = new Size(70, 28);
-            label3.TabIndex = 6;
-            label3.Text = "Vai Trò";
             // 
             // label2
             // 
@@ -273,6 +251,7 @@
             // txt_ten_nguoi_dung
             // 
             txt_ten_nguoi_dung.BackColor = SystemColors.Control;
+            txt_ten_nguoi_dung.Font = new Font("Segoe UI", 12F);
             txt_ten_nguoi_dung.Location = new Point(26, 33);
             txt_ten_nguoi_dung.Multiline = true;
             txt_ten_nguoi_dung.Name = "txt_ten_nguoi_dung";
@@ -301,6 +280,7 @@
             Controls.Add(panel1);
             Cursor = Cursors.Hand;
             Name = "QL_Nhan_Vien";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "QL_Nhan_Vien";
             panel1.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
@@ -326,8 +306,6 @@
         private Label label1;
         private GroupBox groupBox2;
         private TextBox txt_mat_khau;
-        private ComboBox cbb_vai_tro;
-        private Label label3;
         private DataGridView dgv_ds_nhan_vien;
         private Button btn_xoa;
         private Button btn_sua;

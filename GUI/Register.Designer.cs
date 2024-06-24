@@ -33,8 +33,6 @@
             lb_dang_nhap = new Label();
             panel3 = new Panel();
             btn_dang_ki = new Button();
-            cbb_vai_tro = new ComboBox();
-            label3 = new Label();
             txt_mat_khau = new TextBox();
             label2 = new Label();
             txt_ten_nguoi_dung = new TextBox();
@@ -83,8 +81,6 @@
             panel3.BackColor = Color.Transparent;
             panel3.Controls.Add(lb_dang_nhap);
             panel3.Controls.Add(btn_dang_ki);
-            panel3.Controls.Add(cbb_vai_tro);
-            panel3.Controls.Add(label3);
             panel3.Controls.Add(txt_mat_khau);
             panel3.Controls.Add(label2);
             panel3.Controls.Add(txt_ten_nguoi_dung);
@@ -108,26 +104,6 @@
             btn_dang_ki.TabIndex = 0;
             btn_dang_ki.Text = "Đăng Kí";
             btn_dang_ki.UseVisualStyleBackColor = false;
-            // 
-            // cbb_vai_tro
-            // 
-            cbb_vai_tro.BackColor = SystemColors.Control;
-            cbb_vai_tro.FormattingEnabled = true;
-            cbb_vai_tro.Location = new Point(17, 248);
-            cbb_vai_tro.Name = "cbb_vai_tro";
-            cbb_vai_tro.Size = new Size(564, 28);
-            cbb_vai_tro.TabIndex = 5;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.ForeColor = SystemColors.Highlight;
-            label3.Location = new Point(18, 212);
-            label3.Name = "label3";
-            label3.Size = new Size(70, 28);
-            label3.TabIndex = 4;
-            label3.Text = "Vai Trò";
             // 
             // txt_mat_khau
             // 
@@ -193,11 +169,9 @@
         private Panel panel3;
         private TextBox txt_ten_nguoi_dung;
         private Label label1;
-        private Label label3;
         private TextBox txt_mat_khau;
         private Label label2;
         private Button btn_dang_ki;
-        private ComboBox cbb_vai_tro;
         private Label lb_dang_nhap;
     }
 }

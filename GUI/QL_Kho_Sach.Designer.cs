@@ -123,6 +123,7 @@
             // txt_ten_sach
             // 
             txt_ten_sach.BackColor = SystemColors.Control;
+            txt_ten_sach.Font = new Font("Segoe UI", 12F);
             txt_ten_sach.Location = new Point(26, 104);
             txt_ten_sach.Multiline = true;
             txt_ten_sach.Name = "txt_ten_sach";
@@ -166,6 +167,7 @@
             // 
             groupBox2.Controls.Add(dgv_kho_sach);
             groupBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox2.ForeColor = Color.White;
             groupBox2.Location = new Point(28, 499);
             groupBox2.Name = "groupBox2";
             groupBox2.RightToLeft = RightToLeft.Yes;
@@ -259,13 +261,14 @@
             label9.ForeColor = Color.White;
             label9.Location = new Point(3, 5);
             label9.Name = "label9";
-            label9.Size = new Size(96, 28);
+            label9.Size = new Size(90, 28);
             label9.TabIndex = 26;
-            label9.Text = "Số Lượng";
+            label9.Text = "Giới Tính";
             // 
             // txt_tac_gia
             // 
             txt_tac_gia.BackColor = SystemColors.Control;
+            txt_tac_gia.Font = new Font("Segoe UI", 12F);
             txt_tac_gia.Location = new Point(26, 181);
             txt_tac_gia.Multiline = true;
             txt_tac_gia.Name = "txt_tac_gia";
@@ -286,6 +289,7 @@
             // txt_so_luong
             // 
             txt_so_luong.BackColor = SystemColors.Control;
+            txt_so_luong.Font = new Font("Segoe UI", 12F);
             txt_so_luong.Location = new Point(563, 252);
             txt_so_luong.Multiline = true;
             txt_so_luong.Name = "txt_so_luong";
@@ -306,6 +310,7 @@
             // txt_nha_xuat_ban
             // 
             txt_nha_xuat_ban.BackColor = SystemColors.Control;
+            txt_nha_xuat_ban.Font = new Font("Segoe UI", 12F);
             txt_nha_xuat_ban.Location = new Point(563, 181);
             txt_nha_xuat_ban.Multiline = true;
             txt_nha_xuat_ban.Name = "txt_nha_xuat_ban";
@@ -326,6 +331,7 @@
             // txt_gia_bia
             // 
             txt_gia_bia.BackColor = SystemColors.Control;
+            txt_gia_bia.Font = new Font("Segoe UI", 12F);
             txt_gia_bia.Location = new Point(563, 104);
             txt_gia_bia.Multiline = true;
             txt_gia_bia.Name = "txt_gia_bia";
@@ -346,6 +352,7 @@
             // txt_ngay_nhap
             // 
             txt_ngay_nhap.BackColor = SystemColors.Control;
+            txt_ngay_nhap.Font = new Font("Segoe UI", 12F);
             txt_ngay_nhap.Location = new Point(563, 33);
             txt_ngay_nhap.Multiline = true;
             txt_ngay_nhap.Name = "txt_ngay_nhap";
@@ -366,10 +373,11 @@
             // cbb_ngon_ngu
             // 
             cbb_ngon_ngu.BackColor = SystemColors.Control;
+            cbb_ngon_ngu.Font = new Font("Segoe UI", 12F);
             cbb_ngon_ngu.FormattingEnabled = true;
             cbb_ngon_ngu.Location = new Point(26, 325);
             cbb_ngon_ngu.Name = "cbb_ngon_ngu";
-            cbb_ngon_ngu.Size = new Size(472, 45);
+            cbb_ngon_ngu.Size = new Size(472, 36);
             cbb_ngon_ngu.TabIndex = 14;
             // 
             // label1
@@ -402,15 +410,17 @@
             // cbb_the_loai
             // 
             cbb_the_loai.BackColor = SystemColors.Control;
+            cbb_the_loai.Font = new Font("Segoe UI", 12F);
             cbb_the_loai.FormattingEnabled = true;
             cbb_the_loai.Location = new Point(26, 247);
             cbb_the_loai.Name = "cbb_the_loai";
-            cbb_the_loai.Size = new Size(472, 45);
+            cbb_the_loai.Size = new Size(472, 36);
             cbb_the_loai.TabIndex = 7;
             // 
             // txt_ma_sach
             // 
             txt_ma_sach.BackColor = SystemColors.Control;
+            txt_ma_sach.Font = new Font("Segoe UI", 12F);
             txt_ma_sach.Location = new Point(26, 33);
             txt_ma_sach.Multiline = true;
             txt_ma_sach.Name = "txt_ma_sach";
@@ -508,6 +518,7 @@
             Controls.Add(groupBox1);
             Controls.Add(panel1);
             Name = "QL_Kho_Sach";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "QL_Kho_Sach";
             groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgv_kho_sach).EndInit();
