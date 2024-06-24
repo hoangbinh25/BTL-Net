@@ -43,7 +43,13 @@
   <ItemGroup>
     <Compile Include="dbConnection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TaiKhoan.cs" />
+    <Compile Include="TaiKhoanAccess.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{620f7c28-7aea-466b-9955-39ae0a66583d}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

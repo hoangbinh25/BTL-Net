@@ -12,7 +12,7 @@ namespace BUS
     {
         TaiKhoanAccess tkAccess = new TaiKhoanAccess();
 
-        public string CheckLogic(TaiKhoan taikhoan)
+        public string CheckLogicDTO(TaiKhoan taikhoan)
         {
             if (taikhoan.ten_nguoi_dung == "")
             {
@@ -21,7 +21,7 @@ namespace BUS
 
             if (taikhoan.mat_khau == "")
             {
-                return "requeid_taikhoan";
+                return "requeid_matkhau";
             }
 
             string info = tkAccess.CheckLogic(taikhoan);

@@ -20,7 +20,7 @@ namespace DAL
             }
         }
 
-        public static string CheckLogic(DTO_TaiKhoan taikhoan)
+        public static string CheckLogicDTO(TaiKhoan taikhoan)
         {
             string user = null;
             // connect tới CSDL

@@ -7,11 +7,11 @@ using DTO;
 
 namespace DAL
 {
-    internal class DAL_TaiKhoan
+    public class TaiKhoanAccess:dbConnection
     {
-        public string CheckLogic(DTO_TaiKhoan taikhoan)
+        public string CheckLogic(TaiKhoan taikhoan)
         {
-            string info = CheckLogic(taikhoan);
+            string info = CheckLogicDTO(taikhoan);
             return info;
         }
     }
