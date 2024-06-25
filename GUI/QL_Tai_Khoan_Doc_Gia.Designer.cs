@@ -170,6 +170,7 @@
             // 
             groupBox2.Controls.Add(dgv_ds_doc_gia);
             groupBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox2.ForeColor = Color.White;
             groupBox2.Location = new Point(28, 412);
             groupBox2.Name = "groupBox2";
             groupBox2.RightToLeft = RightToLeft.Yes;

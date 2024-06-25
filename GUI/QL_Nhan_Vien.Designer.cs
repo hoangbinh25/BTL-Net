@@ -150,13 +150,13 @@
             // 
             groupBox2.Controls.Add(dgv_ds_nhan_vien);
             groupBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-<<<<<<< HEAD
+
             groupBox2.ForeColor = Color.White;
             groupBox2.Location = new Point(33, 291);
-=======
+
             groupBox2.Location = new Point(29, 218);
             groupBox2.Margin = new Padding(3, 2, 3, 2);
->>>>>>> 9eff24315f1a61321ec581304d0a9f46267ded4c
+
             groupBox2.Name = "groupBox2";
             groupBox2.Padding = new Padding(3, 2, 3, 2);
             groupBox2.RightToLeft = RightToLeft.Yes;
@@ -249,42 +249,23 @@
             // txt_mat_khau
             // 
             txt_mat_khau.BackColor = SystemColors.Control;
-<<<<<<< HEAD
+
             txt_mat_khau.Font = new Font("Segoe UI", 12F);
             txt_mat_khau.Location = new Point(26, 104);
-=======
+
             txt_mat_khau.Location = new Point(23, 78);
             txt_mat_khau.Margin = new Padding(3, 2, 3, 2);
->>>>>>> 9eff24315f1a61321ec581304d0a9f46267ded4c
+
             txt_mat_khau.Multiline = true;
             txt_mat_khau.Name = "txt_mat_khau";
             txt_mat_khau.Size = new Size(531, 26);
             txt_mat_khau.TabIndex = 8;
             // 
-<<<<<<< HEAD
-=======
+
             // cbb_vai_tro
+            
             // 
-            cbb_vai_tro.BackColor = SystemColors.Control;
-            cbb_vai_tro.FormattingEnabled = true;
-            cbb_vai_tro.Location = new Point(24, 130);
-            cbb_vai_tro.Margin = new Padding(3, 2, 3, 2);
-            cbb_vai_tro.Name = "cbb_vai_tro";
-            cbb_vai_tro.Size = new Size(531, 38);
-            cbb_vai_tro.TabIndex = 7;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(24, 107);
-            label3.Name = "label3";
-            label3.Size = new Size(57, 21);
-            label3.TabIndex = 6;
-            label3.Text = "Vai Trò";
-            // 
->>>>>>> 9eff24315f1a61321ec581304d0a9f46267ded4c
+
             // label2
             // 
             label2.AutoSize = true;
@@ -299,13 +280,13 @@
             // txt_ten_nguoi_dung
             // 
             txt_ten_nguoi_dung.BackColor = SystemColors.Control;
-<<<<<<< HEAD
+
             txt_ten_nguoi_dung.Font = new Font("Segoe UI", 12F);
             txt_ten_nguoi_dung.Location = new Point(26, 33);
-=======
+
             txt_ten_nguoi_dung.Location = new Point(23, 25);
             txt_ten_nguoi_dung.Margin = new Padding(3, 2, 3, 2);
->>>>>>> 9eff24315f1a61321ec581304d0a9f46267ded4c
+
             txt_ten_nguoi_dung.Multiline = true;
             txt_ten_nguoi_dung.Name = "txt_ten_nguoi_dung";
             txt_ten_nguoi_dung.Size = new Size(531, 26);

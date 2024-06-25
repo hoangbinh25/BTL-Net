@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            dgv_ds_nhan_vien = new DataGridView();
-            txt_ten_nguoi_dung = new TextBox();
+            dgv_ds_tim_kiem = new DataGridView();
+            txt_tim_kiem = new TextBox();
             groupBox2 = new GroupBox();
             btn_dang_xuat = new Button();
             btn_muon_tra = new Button();
@@ -41,7 +41,7 @@
             groupBox1 = new GroupBox();
             panel2 = new Panel();
             btn_tim_kiem = new Button();
-            ((System.ComponentModel.ISupportInitialize)dgv_ds_nhan_vien).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgv_ds_tim_kiem).BeginInit();
             groupBox2.SuspendLayout();
             panel1.SuspendLayout();
             groupBox1.SuspendLayout();
@@ -59,31 +59,31 @@
             label1.TabIndex = 2;
             label1.Text = "Cụm Từ Tìm Kiếm";
             // 
-            // dgv_ds_nhan_vien
+            // dgv_ds_tim_kiem
             // 
-            dgv_ds_nhan_vien.AllowUserToAddRows = false;
-            dgv_ds_nhan_vien.AllowUserToDeleteRows = false;
-            dgv_ds_nhan_vien.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv_ds_nhan_vien.Location = new Point(0, 33);
-            dgv_ds_nhan_vien.Name = "dgv_ds_nhan_vien";
-            dgv_ds_nhan_vien.ReadOnly = true;
-            dgv_ds_nhan_vien.RowHeadersWidth = 51;
-            dgv_ds_nhan_vien.Size = new Size(775, 358);
-            dgv_ds_nhan_vien.TabIndex = 0;
+            dgv_ds_tim_kiem.AllowUserToAddRows = false;
+            dgv_ds_tim_kiem.AllowUserToDeleteRows = false;
+            dgv_ds_tim_kiem.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgv_ds_tim_kiem.Location = new Point(0, 33);
+            dgv_ds_tim_kiem.Name = "dgv_ds_tim_kiem";
+            dgv_ds_tim_kiem.ReadOnly = true;
+            dgv_ds_tim_kiem.RowHeadersWidth = 51;
+            dgv_ds_tim_kiem.Size = new Size(775, 358);
+            dgv_ds_tim_kiem.TabIndex = 0;
             // 
-            // txt_ten_nguoi_dung
+            // txt_tim_kiem
             // 
-            txt_ten_nguoi_dung.BackColor = SystemColors.Control;
-            txt_ten_nguoi_dung.Font = new Font("Segoe UI", 12F);
-            txt_ten_nguoi_dung.Location = new Point(26, 33);
-            txt_ten_nguoi_dung.Multiline = true;
-            txt_ten_nguoi_dung.Name = "txt_ten_nguoi_dung";
-            txt_ten_nguoi_dung.Size = new Size(592, 34);
-            txt_ten_nguoi_dung.TabIndex = 3;
+            txt_tim_kiem.BackColor = SystemColors.Control;
+            txt_tim_kiem.Font = new Font("Segoe UI", 12F);
+            txt_tim_kiem.Location = new Point(26, 33);
+            txt_tim_kiem.Multiline = true;
+            txt_tim_kiem.Name = "txt_tim_kiem";
+            txt_tim_kiem.Size = new Size(592, 34);
+            txt_tim_kiem.TabIndex = 3;
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(dgv_ds_nhan_vien);
+            groupBox2.Controls.Add(dgv_ds_tim_kiem);
             groupBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             groupBox2.ForeColor = Color.White;
             groupBox2.Location = new Point(33, 175);
@@ -179,7 +179,7 @@
             // 
             panel2.BorderStyle = BorderStyle.FixedSingle;
             panel2.Controls.Add(btn_tim_kiem);
-            panel2.Controls.Add(txt_ten_nguoi_dung);
+            panel2.Controls.Add(txt_tim_kiem);
             panel2.Controls.Add(label1);
             panel2.ForeColor = SystemColors.ButtonFace;
             panel2.Location = new Point(28, 54);
@@ -214,7 +214,7 @@
             Controls.Add(groupBox1);
             Name = "Tim_kiem";
             Text = "Tim_kiem";
-            ((System.ComponentModel.ISupportInitialize)dgv_ds_nhan_vien).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgv_ds_tim_kiem).EndInit();
             groupBox2.ResumeLayout(false);
             panel1.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
@@ -225,8 +225,8 @@
 
         #endregion
         private Label label1;
-        private DataGridView dgv_ds_nhan_vien;
-        private TextBox txt_ten_nguoi_dung;
+        private DataGridView dgv_ds_tim_kiem;
+        private TextBox txt_tim_kiem;
         private GroupBox groupBox2;
         private Button btn_dang_xuat;
         private Button btn_muon_tra;
