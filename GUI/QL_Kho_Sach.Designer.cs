@@ -121,13 +121,9 @@
             // txt_ten_sach
             // 
             txt_ten_sach.BackColor = SystemColors.Control;
-
             txt_ten_sach.Font = new Font("Segoe UI", 12F);
-            txt_ten_sach.Location = new Point(26, 104);
-
             txt_ten_sach.Location = new Point(23, 78);
             txt_ten_sach.Margin = new Padding(3, 2, 3, 2);
-
             txt_ten_sach.Multiline = true;
             txt_ten_sach.Name = "txt_ten_sach";
             txt_ten_sach.Size = new Size(414, 26);
@@ -170,13 +166,9 @@
             // 
             groupBox2.Controls.Add(dgv_kho_sach);
             groupBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-
             groupBox2.ForeColor = Color.White;
-            groupBox2.Location = new Point(28, 499);
-
             groupBox2.Location = new Point(28, 375);
             groupBox2.Margin = new Padding(3, 2, 3, 2);
-
             groupBox2.Name = "groupBox2";
             groupBox2.Padding = new Padding(3, 2, 3, 2);
             groupBox2.RightToLeft = RightToLeft.Yes;
@@ -230,23 +222,12 @@
             panel2.Size = new Size(944, 347);
             panel2.TabIndex = 0;
             // 
-
-            // panel3
-            // 
-            
-            // 
             // txt_tac_gia
             // 
             txt_tac_gia.BackColor = SystemColors.Control;
             txt_tac_gia.Font = new Font("Segoe UI", 12F);
-            txt_tac_gia.Location = new Point(26, 181);
-
-            // txt_tac_gia
-            // 
-            txt_tac_gia.BackColor = SystemColors.Control;
             txt_tac_gia.Location = new Point(23, 136);
             txt_tac_gia.Margin = new Padding(3, 2, 3, 2);
-
             txt_tac_gia.Multiline = true;
             txt_tac_gia.Name = "txt_tac_gia";
             txt_tac_gia.Size = new Size(414, 26);
@@ -266,13 +247,9 @@
             // txt_so_luong
             // 
             txt_so_luong.BackColor = SystemColors.Control;
-
             txt_so_luong.Font = new Font("Segoe UI", 12F);
-            txt_so_luong.Location = new Point(563, 252);
-
             txt_so_luong.Location = new Point(493, 207);
             txt_so_luong.Margin = new Padding(3, 2, 3, 2);
-
             txt_so_luong.Multiline = true;
             txt_so_luong.Name = "txt_so_luong";
             txt_so_luong.Size = new Size(414, 26);
@@ -292,13 +269,9 @@
             // txt_nha_xuat_ban
             // 
             txt_nha_xuat_ban.BackColor = SystemColors.Control;
-
             txt_nha_xuat_ban.Font = new Font("Segoe UI", 12F);
-            txt_nha_xuat_ban.Location = new Point(563, 181);
-
             txt_nha_xuat_ban.Location = new Point(493, 136);
             txt_nha_xuat_ban.Margin = new Padding(3, 2, 3, 2);
-
             txt_nha_xuat_ban.Multiline = true;
             txt_nha_xuat_ban.Name = "txt_nha_xuat_ban";
             txt_nha_xuat_ban.Size = new Size(414, 26);
@@ -318,13 +291,9 @@
             // txt_gia_bia
             // 
             txt_gia_bia.BackColor = SystemColors.Control;
-
             txt_gia_bia.Font = new Font("Segoe UI", 12F);
-            txt_gia_bia.Location = new Point(563, 104);
-
             txt_gia_bia.Location = new Point(493, 78);
             txt_gia_bia.Margin = new Padding(3, 2, 3, 2);
-
             txt_gia_bia.Multiline = true;
             txt_gia_bia.Name = "txt_gia_bia";
             txt_gia_bia.Size = new Size(414, 26);
@@ -344,13 +313,9 @@
             // txt_ngay_nhap
             // 
             txt_ngay_nhap.BackColor = SystemColors.Control;
-
             txt_ngay_nhap.Font = new Font("Segoe UI", 12F);
-            txt_ngay_nhap.Location = new Point(563, 33);
-
             txt_ngay_nhap.Location = new Point(493, 25);
             txt_ngay_nhap.Margin = new Padding(3, 2, 3, 2);
-
             txt_ngay_nhap.Multiline = true;
             txt_ngay_nhap.Name = "txt_ngay_nhap";
             txt_ngay_nhap.Size = new Size(414, 26);
@@ -375,11 +340,7 @@
             cbb_ngon_ngu.Location = new Point(23, 257);
             cbb_ngon_ngu.Margin = new Padding(3, 2, 3, 2);
             cbb_ngon_ngu.Name = "cbb_ngon_ngu";
-
-            cbb_ngon_ngu.Size = new Size(472, 36);
-
-            cbb_ngon_ngu.Size = new Size(414, 38);
-
+            cbb_ngon_ngu.Size = new Size(414, 29);
             cbb_ngon_ngu.TabIndex = 14;
             // 
             // label1
@@ -418,23 +379,16 @@
             cbb_the_loai.Location = new Point(23, 195);
             cbb_the_loai.Margin = new Padding(3, 2, 3, 2);
             cbb_the_loai.Name = "cbb_the_loai";
-
-            cbb_the_loai.Size = new Size(472, 36);
-
-            cbb_the_loai.Size = new Size(414, 38);
-
+            cbb_the_loai.Size = new Size(414, 29);
             cbb_the_loai.TabIndex = 7;
+            cbb_the_loai.SelectedIndexChanged += cbb_the_loai_SelectedIndexChanged;
             // 
             // txt_ma_sach
             // 
             txt_ma_sach.BackColor = SystemColors.Control;
-
             txt_ma_sach.Font = new Font("Segoe UI", 12F);
-            txt_ma_sach.Location = new Point(26, 33);
-
             txt_ma_sach.Location = new Point(23, 25);
             txt_ma_sach.Margin = new Padding(3, 2, 3, 2);
-
             txt_ma_sach.Multiline = true;
             txt_ma_sach.Name = "txt_ma_sach";
             txt_ma_sach.Size = new Size(414, 26);
@@ -528,6 +482,7 @@
             btn_nhan_vien.TabIndex = 0;
             btn_nhan_vien.Text = "Nhân Viên";
             btn_nhan_vien.UseVisualStyleBackColor = true;
+            btn_nhan_vien.Click += btn_nhan_vien_Click;
             // 
             // QL_Kho_Sach
             // 
@@ -542,6 +497,7 @@
             Name = "QL_Kho_Sach";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "QL_Kho_Sach";
+            Load += QL_Kho_Sach_Load;
             groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgv_kho_sach).EndInit();
             panel2.ResumeLayout(false);

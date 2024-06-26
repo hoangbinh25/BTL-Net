@@ -10,9 +10,9 @@ namespace BUS
 {
     public class TaiKhoanBUS
     {
-        TaiKhoanAccess tkAccess = new TaiKhoanAccess();
+        TaiKhoanDAL tkAccess = new TaiKhoanDAL();
 
-        public string CheckLogicDTO(TaiKhoan taikhoan)
+        public string CheckLogic(TaiKhoanDTO taikhoan)
         {
             if (taikhoan.ten_nguoi_dung == "")
             {

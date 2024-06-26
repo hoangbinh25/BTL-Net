@@ -48,8 +48,9 @@
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.ForeColor = SystemColors.ControlText;
             panel1.Location = new Point(2, 1);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(227, 557);
+            panel1.Size = new Size(199, 419);
             panel1.TabIndex = 0;
             // 
             // groupBox1
@@ -58,9 +59,11 @@
             groupBox1.BackgroundImageLayout = ImageLayout.None;
             groupBox1.Font = new Font("Times New Roman", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             groupBox1.ForeColor = SystemColors.Highlight;
-            groupBox1.Location = new Point(253, 12);
+            groupBox1.Location = new Point(221, 9);
+            groupBox1.Margin = new Padding(3, 2, 3, 2);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(601, 417);
+            groupBox1.Padding = new Padding(3, 2, 3, 2);
+            groupBox1.Size = new Size(526, 313);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             groupBox1.Text = "Đăng Kí Tài Khoản";
@@ -70,9 +73,9 @@
             lb_dang_nhap.AutoSize = true;
             lb_dang_nhap.Font = new Font("Segoe UI Semilight", 10.8F, FontStyle.Italic, GraphicsUnit.Point, 0);
             lb_dang_nhap.ForeColor = SystemColors.Highlight;
-            lb_dang_nhap.Location = new Point(416, 423);
+            lb_dang_nhap.Location = new Point(364, 317);
             lb_dang_nhap.Name = "lb_dang_nhap";
-            lb_dang_nhap.Size = new Size(165, 25);
+            lb_dang_nhap.Size = new Size(134, 20);
             lb_dang_nhap.TabIndex = 6;
             lb_dang_nhap.Text = "Đăng Nhập Tại Đây";
             // 
@@ -85,9 +88,10 @@
             panel3.Controls.Add(label2);
             panel3.Controls.Add(txt_ten_nguoi_dung);
             panel3.Controls.Add(label1);
-            panel3.Location = new Point(253, 64);
+            panel3.Location = new Point(221, 48);
+            panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(601, 477);
+            panel3.Size = new Size(526, 358);
             panel3.TabIndex = 2;
             // 
             // btn_dang_ki
@@ -96,11 +100,11 @@
             btn_dang_ki.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_dang_ki.ForeColor = SystemColors.Window;
             btn_dang_ki.Image = Properties.Resources.xanhtim2;
-            btn_dang_ki.Location = new Point(211, 329);
+            btn_dang_ki.Location = new Point(185, 247);
             btn_dang_ki.Margin = new Padding(0);
             btn_dang_ki.Name = "btn_dang_ki";
-            btn_dang_ki.Padding = new Padding(10, 5, 10, 5);
-            btn_dang_ki.Size = new Size(176, 53);
+            btn_dang_ki.Padding = new Padding(9, 4, 9, 4);
+            btn_dang_ki.Size = new Size(154, 40);
             btn_dang_ki.TabIndex = 0;
             btn_dang_ki.Text = "Đăng Kí";
             btn_dang_ki.UseVisualStyleBackColor = false;
@@ -108,10 +112,11 @@
             // txt_mat_khau
             // 
             txt_mat_khau.BackColor = SystemColors.Control;
-            txt_mat_khau.Location = new Point(18, 144);
+            txt_mat_khau.Location = new Point(6, 168);
+            txt_mat_khau.Margin = new Padding(3, 2, 3, 2);
             txt_mat_khau.Multiline = true;
             txt_mat_khau.Name = "txt_mat_khau";
-            txt_mat_khau.Size = new Size(564, 53);
+            txt_mat_khau.Size = new Size(494, 41);
             txt_mat_khau.TabIndex = 3;
             // 
             // label2
@@ -119,19 +124,20 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.Highlight;
-            label2.Location = new Point(18, 109);
+            label2.Location = new Point(6, 129);
             label2.Name = "label2";
-            label2.Size = new Size(96, 28);
+            label2.Size = new Size(76, 21);
             label2.TabIndex = 2;
             label2.Text = "Mật Khẩu";
             // 
             // txt_ten_nguoi_dung
             // 
             txt_ten_nguoi_dung.BackColor = SystemColors.Control;
-            txt_ten_nguoi_dung.Location = new Point(17, 42);
+            txt_ten_nguoi_dung.Location = new Point(6, 58);
+            txt_ten_nguoi_dung.Margin = new Padding(3, 2, 3, 2);
             txt_ten_nguoi_dung.Multiline = true;
             txt_ten_nguoi_dung.Name = "txt_ten_nguoi_dung";
-            txt_ten_nguoi_dung.Size = new Size(564, 53);
+            txt_ten_nguoi_dung.Size = new Size(494, 41);
             txt_ten_nguoi_dung.TabIndex = 1;
             // 
             // label1
@@ -139,22 +145,23 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.Highlight;
-            label1.Location = new Point(17, 7);
+            label1.Location = new Point(6, 20);
             label1.Name = "label1";
-            label1.Size = new Size(155, 28);
+            label1.Size = new Size(123, 21);
             label1.TabIndex = 0;
             label1.Text = "Tên Người Dùng";
             // 
             // form_dang_ki
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(882, 538);
+            ClientSize = new Size(772, 404);
             Controls.Add(panel3);
             Controls.Add(groupBox1);
             Controls.Add(panel1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "form_dang_ki";
             Text = "Register";
             panel3.ResumeLayout(false);

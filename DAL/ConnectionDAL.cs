@@ -9,18 +9,17 @@ using System.Data;
 
 namespace DAL
 {
-    public class dbConnection
+    public class SqlConnectionData
     {
-       public class SqlConnectionData
+        public static SqlConnection Connect()
         {
-            public static SqlConnection Connect()
-            {
-                SqlConnection Conn = new SqlConnection("Data Source=LAPTOP-R4OFTQE1;Initial Catalog=QL_THUVIEN;Integrated Security=True;Encrypt=True;");
-                return Conn;
-            }
+            SqlConnection Conn = new SqlConnection(@"Data Source=LAPTOP-R4OFTQE1;Initial Catalog=QL_THUVIEN;Integrated Security=True;Encrypt=True;");
+            return Conn;
         }
-
-        public static string CheckLogicDTO(TaiKhoan taikhoan)
+    }
+    public class ConnectionDAL
+    {
+        public static string CheckLogic_DTO(TaiKhoanDTO taikhoan)
         {
             string user = null;
             // connect tới CSDL
@@ -30,7 +29,7 @@ namespace DAL
             command.CommandType = CommandType.StoredProcedure;
             command.Parameters.AddWithValue("@user", taikhoan.ten_nguoi_dung);
             command.Parameters.AddWithValue("@pass", taikhoan.mat_khau);
-            // Kiểm tra quyền các bạn thêm 1 cái parameter...
+            command.Parameters.AddWithValue("@role", taikhoan.vai_tro);
             command.Connection = Conn;
 
             SqlDataReader reader = command.ExecuteReader();
@@ -43,7 +42,8 @@ namespace DAL
                 }
                 reader.Close();
                 Conn.Close();
-            } else
+            }
+            else
             {
                 return "Tài khoản hoặc mật khẩu không chính xác!";
             }
