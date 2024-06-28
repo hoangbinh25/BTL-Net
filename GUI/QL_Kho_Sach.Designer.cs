@@ -381,7 +381,6 @@
             cbb_the_loai.Name = "cbb_the_loai";
             cbb_the_loai.Size = new Size(414, 29);
             cbb_the_loai.TabIndex = 7;
-            cbb_the_loai.SelectedIndexChanged += cbb_the_loai_SelectedIndexChanged;
             // 
             // txt_ma_sach
             // 
@@ -431,6 +430,7 @@
             btn_muon_tra.TabIndex = 3;
             btn_muon_tra.Text = "Mượn Trả";
             btn_muon_tra.UseVisualStyleBackColor = true;
+            btn_muon_tra.Click += btn_muon_tra_Click;
             // 
             // btn_doc_gia
             // 
@@ -442,6 +442,7 @@
             btn_doc_gia.TabIndex = 2;
             btn_doc_gia.Text = "Độc Giả";
             btn_doc_gia.UseVisualStyleBackColor = true;
+            btn_doc_gia.Click += btn_doc_gia_Click;
             // 
             // btn_kho_sach
             // 
@@ -497,7 +498,6 @@
             Name = "QL_Kho_Sach";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "QL_Kho_Sach";
-            Load += QL_Kho_Sach_Load;
             groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgv_kho_sach).EndInit();
             panel2.ResumeLayout(false);

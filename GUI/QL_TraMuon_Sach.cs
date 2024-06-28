@@ -16,5 +16,26 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void btn_nhan_vien_Click(object sender, EventArgs e)
+        {
+            QL_Nhan_Vien qlnv = new QL_Nhan_Vien();
+            this.Hide();
+            qlnv.ShowDialog();
+        }
+
+        private void btn_kho_sach_Click(object sender, EventArgs e)
+        {
+            QL_Kho_Sach qlks = new QL_Kho_Sach();
+            this.Hide();
+            qlks.ShowDialog();
+        }
+
+        private void btn_doc_gia_Click(object sender, EventArgs e)
+        {
+            QL_Tai_Khoan_Doc_Gia qldg = new QL_Tai_Khoan_Doc_Gia();
+            this.Hide();
+            qldg.ShowDialog();
+        }
     }
 }

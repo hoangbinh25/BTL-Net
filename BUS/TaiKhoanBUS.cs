@@ -10,23 +10,11 @@ namespace BUS
 {
     public class TaiKhoanBUS
     {
-        TaiKhoanDAL tkAccess = new TaiKhoanDAL();
-
-        public string CheckLogic(TaiKhoanDTO taikhoan)
+        public TaiKhoanDAL tkDAL = new TaiKhoanDAL();
+        
+        public bool ValidateUser(string username, string password)
         {
-            if (taikhoan.ten_nguoi_dung == "")
-            {
-                return "requeid_taikhoan";
-            }
-
-            if (taikhoan.mat_khau == "")
-            {
-                return "requeid_matkhau";
-            }
-
-            string info = tkAccess.CheckLogic(taikhoan);
-
-            return info;
+            return tkDAL.ValidateUser(username, password);
         }
     }
 }

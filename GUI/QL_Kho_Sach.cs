@@ -26,32 +26,18 @@ namespace GUI
             qlnv.ShowDialog();
         }
 
-        private void cbb_the_loai_SelectedIndexChanged(object sender, EventArgs e)
+        private void btn_doc_gia_Click(object sender, EventArgs e)
         {
-
+            QL_Tai_Khoan_Doc_Gia qldg = new QL_Tai_Khoan_Doc_Gia();
+            this.Hide();
+            qldg.ShowDialog();
         }
 
-        public void HienThiComboBox()
+        private void btn_muon_tra_Click(object sender, EventArgs e)
         {
-            
-        }
-
-        private void QL_Kho_Sach_Load(object sender, EventArgs e)
-        {
-
-            String strQuery = "select * from loai_sach";
-            try
-            {
-                dt = QuerySQL.getData(strQuery);
-                cbb_the_loai.DisplayMember = "ten_loai_sach";
-                cbb_the_loai.ValueMember = "loai_sach_id";
-                cbb_the_loai.DataSource = dt;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                throw;
-            }
+            QL_TraMuon_Sach qlmt = new QL_TraMuon_Sach();
+            this.Hide();
+            qlmt.ShowDialog();
         }
     }
 }

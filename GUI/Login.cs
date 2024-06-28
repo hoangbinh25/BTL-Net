@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,15 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DTO;
-using BUS;
+using System.Data.SqlClient;
+
 
 namespace GUI
 {
     public partial class form_dang_nhap : Form
     {
-        TaiKhoanDTO taikhoan = new TaiKhoanDTO();
-        TaiKhoanBUS TKBUS = new TaiKhoanBUS();
+        public TaiKhoanDAL tkDAL = new TaiKhoanDAL();
+      
         public form_dang_nhap()
         {
             InitializeComponent();
@@ -23,28 +24,21 @@ namespace GUI
 
         private void btn_dang_nhap_Click(object sender, EventArgs e)
         {
-            taikhoan.ten_nguoi_dung = txt_ten_nguoi_dung.Text;
-            taikhoan.mat_khau = txt_mat_khau.Text;
-            string getuser = TKBUS.CheckLogic(taikhoan);
+            string username = txt_ten_nguoi_dung.Text;
+            string password = txt_mat_khau.Text;
 
-            // Trả lại kết quả nếu nhập tài khoản không đúng
-            switch (getuser)
-            {
-                case "requeid_taikhoan":
-                    MessageBox.Show("Tài khoản không được để trống");
-                    return;
+                if (tkDAL.ValidateUser(username, password))
+                {
+                    MessageBox.Show("Bạn đã đăng nhập thành công!");
 
-                case "requeid_matkhau":
-                    MessageBox.Show("Mật khẩu không được để trống");
-                    return;
-
-                case "Tài khoản hoặc mật khẩu không chính xác!":
-                    MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác!");
-                    return;
+                QL_Kho_Sach qlks = new QL_Kho_Sach();
+                this.Hide();
+                qlks.ShowDialog();
             }
-            MessageBox.Show("Đăng nhập thành công");
-            QL_Kho_Sach qlksForm = new QL_Kho_Sach();
-            qlksForm.ShowDialog();
+                else
+                {
+                    MessageBox.Show("Tài khoản hoặc mật khẩu không đúng");
+                }
         }
     }
 }

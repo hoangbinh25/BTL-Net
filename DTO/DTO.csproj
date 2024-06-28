@@ -41,10 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TaiKhoanDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tblSach.cs" />
-    <Compile Include="VaiTroDTO.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

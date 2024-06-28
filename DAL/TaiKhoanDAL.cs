@@ -9,12 +9,25 @@ using System.Data;
 
 namespace DAL
 {
-    public class TaiKhoanDAL:ConnectionDAL
+    public class TaiKhoanDAL
     {
-        public string CheckLogic(TaiKhoanDTO taikhoan)
+        private SqlConnection conn = SqlConnectionData.Connect();
+
+        public bool ValidateUser(string username, string password)
         {
-            string info = CheckLogic_DTO(taikhoan);
-            return info;
+            using (conn)
+            {
+                conn.Open();
+                using (SqlCommand command = new SqlCommand("proc_account", conn))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@username", username);
+                    command.Parameters.AddWithValue("@password", password);
+
+                    int count = Convert.ToInt32(command.ExecuteScalar());
+                    return count == 1;
+                }
+            }
         }
     }
 }

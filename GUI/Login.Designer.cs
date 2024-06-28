@@ -118,8 +118,10 @@
             txt_mat_khau.Margin = new Padding(3, 2, 3, 2);
             txt_mat_khau.Multiline = true;
             txt_mat_khau.Name = "txt_mat_khau";
+            txt_mat_khau.PasswordChar = '*';
             txt_mat_khau.Size = new Size(494, 41);
             txt_mat_khau.TabIndex = 3;
+            txt_mat_khau.UseSystemPasswordChar = true;
             // 
             // label2
             // 
