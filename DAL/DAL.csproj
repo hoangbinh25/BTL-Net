@@ -51,6 +51,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="QuerySQL.cs" />
     <Compile Include="TaiKhoanDAL.cs" />
   </ItemGroup>
   <ItemGroup>
