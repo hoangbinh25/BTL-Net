@@ -142,8 +142,13 @@
             txt_dia_chi.Location = new Point(26, 245);
             txt_dia_chi.Multiline = true;
             txt_dia_chi.Name = "txt_dia_chi";
+<<<<<<< HEAD
+            txt_dia_chi.Size = new Size(883, 26);
+            txt_dia_chi.TabIndex = 4;
+=======
             txt_dia_chi.Size = new Size(1009, 33);
             txt_dia_chi.TabIndex = 24;
+>>>>>>> 6d7d2d6857f909fa2c92cb972bfcba67ef64b9e9
             // 
             // label8
             // 
@@ -188,11 +193,21 @@
             dgv_ds_doc_gia.AllowUserToAddRows = false;
             dgv_ds_doc_gia.AllowUserToDeleteRows = false;
             dgv_ds_doc_gia.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+<<<<<<< HEAD
+            dgv_ds_doc_gia.Location = new Point(0, 21);
+            dgv_ds_doc_gia.Margin = new Padding(3, 2, 3, 2);
+            dgv_ds_doc_gia.Name = "dgv_ds_doc_gia";
+            dgv_ds_doc_gia.ReadOnly = true;
+            dgv_ds_doc_gia.RightToLeft = RightToLeft.No;
+            dgv_ds_doc_gia.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            dgv_ds_doc_gia.Size = new Size(944, 252);
+=======
             dgv_ds_doc_gia.Location = new Point(0, 33);
             dgv_ds_doc_gia.Name = "dgv_ds_doc_gia";
             dgv_ds_doc_gia.ReadOnly = true;
             dgv_ds_doc_gia.RowHeadersWidth = 51;
             dgv_ds_doc_gia.Size = new Size(1079, 336);
+>>>>>>> 6d7d2d6857f909fa2c92cb972bfcba67ef64b9e9
             dgv_ds_doc_gia.TabIndex = 0;
             // 
             // panel2
@@ -246,8 +261,13 @@
             txt_han_the.Location = new Point(563, 177);
             txt_han_the.Multiline = true;
             txt_han_the.Name = "txt_han_the";
+<<<<<<< HEAD
+            txt_han_the.Size = new Size(414, 26);
+            txt_han_the.TabIndex = 7;
+=======
             txt_han_the.Size = new Size(473, 33);
             txt_han_the.TabIndex = 28;
+>>>>>>> 6d7d2d6857f909fa2c92cb972bfcba67ef64b9e9
             // 
             // label1
             // 
@@ -267,8 +287,13 @@
             txt_nam_sinh.Location = new Point(26, 177);
             txt_nam_sinh.Multiline = true;
             txt_nam_sinh.Name = "txt_nam_sinh";
+<<<<<<< HEAD
+            txt_nam_sinh.Size = new Size(414, 26);
+            txt_nam_sinh.TabIndex = 3;
+=======
             txt_nam_sinh.Size = new Size(473, 33);
             txt_nam_sinh.TabIndex = 26;
+>>>>>>> 6d7d2d6857f909fa2c92cb972bfcba67ef64b9e9
             // 
             // label3
             // 
@@ -288,8 +313,13 @@
             txt_cmt.Location = new Point(563, 104);
             txt_cmt.Multiline = true;
             txt_cmt.Name = "txt_cmt";
+<<<<<<< HEAD
+            txt_cmt.Size = new Size(414, 26);
+            txt_cmt.TabIndex = 6;
+=======
             txt_cmt.Size = new Size(473, 33);
             txt_cmt.TabIndex = 18;
+>>>>>>> 6d7d2d6857f909fa2c92cb972bfcba67ef64b9e9
             // 
             // label4
             // 
@@ -309,8 +339,13 @@
             txt_so_dien_thoai.Location = new Point(563, 33);
             txt_so_dien_thoai.Multiline = true;
             txt_so_dien_thoai.Name = "txt_so_dien_thoai";
+<<<<<<< HEAD
+            txt_so_dien_thoai.Size = new Size(414, 26);
+            txt_so_dien_thoai.TabIndex = 5;
+=======
             txt_so_dien_thoai.Size = new Size(473, 33);
             txt_so_dien_thoai.TabIndex = 16;
+>>>>>>> 6d7d2d6857f909fa2c92cb972bfcba67ef64b9e9
             // 
             // label5
             // 
@@ -354,6 +389,7 @@
             btn_xoa.Text = "Xóa";
             btn_xoa.TextAlign = ContentAlignment.MiddleRight;
             btn_xoa.UseVisualStyleBackColor = true;
+            btn_xoa.Click += btn_xoa_Click;
             // 
             // btn_sua
             // 
@@ -370,6 +406,7 @@
             btn_sua.Text = "Sửa";
             btn_sua.TextAlign = ContentAlignment.MiddleRight;
             btn_sua.UseVisualStyleBackColor = true;
+            btn_sua.Click += btn_sua_Click;
             // 
             // btn_them
             // 
@@ -386,6 +423,7 @@
             btn_them.Text = "Thêm ";
             btn_them.TextAlign = ContentAlignment.MiddleRight;
             btn_them.UseVisualStyleBackColor = true;
+            btn_them.Click += btn_them_Click;
             // 
             // txt_ten_doc_gia
             // 
@@ -394,8 +432,13 @@
             txt_ten_doc_gia.Location = new Point(26, 104);
             txt_ten_doc_gia.Multiline = true;
             txt_ten_doc_gia.Name = "txt_ten_doc_gia";
+<<<<<<< HEAD
+            txt_ten_doc_gia.Size = new Size(414, 26);
+            txt_ten_doc_gia.TabIndex = 2;
+=======
             txt_ten_doc_gia.Size = new Size(473, 33);
             txt_ten_doc_gia.TabIndex = 8;
+>>>>>>> 6d7d2d6857f909fa2c92cb972bfcba67ef64b9e9
             // 
             // label2
             // 
@@ -415,8 +458,13 @@
             txt_ma_doc_gia.Location = new Point(26, 33);
             txt_ma_doc_gia.Multiline = true;
             txt_ma_doc_gia.Name = "txt_ma_doc_gia";
+<<<<<<< HEAD
+            txt_ma_doc_gia.Size = new Size(414, 26);
+            txt_ma_doc_gia.TabIndex = 1;
+=======
             txt_ma_doc_gia.Size = new Size(473, 33);
             txt_ma_doc_gia.TabIndex = 3;
+>>>>>>> 6d7d2d6857f909fa2c92cb972bfcba67ef64b9e9
             // 
             // label2222
             // 
@@ -441,6 +489,7 @@
             Name = "QL_Tai_Khoan_Doc_Gia";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "QL_Tai_Khoan_Doc_Gia";
+            Load += QL_Tai_Khoan_Doc_Gia_Load;
             panel1.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox2.ResumeLayout(false);

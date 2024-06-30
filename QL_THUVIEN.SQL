@@ -49,8 +49,11 @@ CREATE TABLE sach (
 CREATE TABLE doc_gia (
     doc_gia_id INT PRIMARY KEY,
     ten_doc_gia NVARCHAR(100),
+	nam_sinh Date,
     dia_chi NVARCHAR(100),
-    so_chung_minh_thu VARCHAR(50)
+	so_dien_thoai int,
+    so_chung_minh_thu VARCHAR(50),
+	han_the nvarchar(20)
 );
 
 -- Table: phieu_muon
@@ -104,10 +107,10 @@ VALUES
 (3, 3, N'NXB Giao Duc', 1, N'Lich Su Viet Nam', N'Pham Van Dong', 7, 6, '2023-05-20', 70000);
 
 -- Insert sample data into doc_gia
-INSERT INTO doc_gia (doc_gia_id, ten_doc_gia, dia_chi, so_chung_minh_thu)
+INSERT INTO doc_gia (doc_gia_id, ten_doc_gia, nam_sinh, dia_chi, so_dien_thoai, so_chung_minh_thu, han_the)
 VALUES
-(1, N'Le Thi C', N'123 Duong ABC, Hanoi', '123456789'),
-(2, N'Nguyen Van D', N'456 Duong XYZ, HCMC', '987654321');
+(1, N'Le Thi C', '2003-2-23' ,N'123 Duong ABC, Hanoi', '023852351', '123456789', '1-1-2028'),
+(2, N'Nguyen Van D', '2002-5-23', N'456 Duong XYZ, HCMC', '097235482', '987654321', '1-1-2028');
 
 -- Insert sample data into phieu_muon
 INSERT INTO phieu_muon (phieu_muon_id, doc_gia_id, so_luong_muon, tien_coc, ngay_muon, ngay_hen_tra)
