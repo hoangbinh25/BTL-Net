@@ -399,7 +399,6 @@
             btn_nhan_vien.TabIndex = 0;
             btn_nhan_vien.Text = "Nhân Viên";
             btn_nhan_vien.UseVisualStyleBackColor = true;
-            btn_nhan_vien.Click += btn_nhan_vien_Click_1;
             // 
             // panel1
             // 

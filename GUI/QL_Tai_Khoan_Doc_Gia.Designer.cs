@@ -147,7 +147,7 @@
             txt_dia_chi.Multiline = true;
             txt_dia_chi.Name = "txt_dia_chi";
             txt_dia_chi.Size = new Size(883, 26);
-            txt_dia_chi.TabIndex = 24;
+            txt_dia_chi.TabIndex = 4;
             // 
             // label8
             // 
@@ -196,11 +196,12 @@
             dgv_ds_doc_gia.AllowUserToAddRows = false;
             dgv_ds_doc_gia.AllowUserToDeleteRows = false;
             dgv_ds_doc_gia.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv_ds_doc_gia.Location = new Point(0, 25);
+            dgv_ds_doc_gia.Location = new Point(0, 21);
             dgv_ds_doc_gia.Margin = new Padding(3, 2, 3, 2);
             dgv_ds_doc_gia.Name = "dgv_ds_doc_gia";
             dgv_ds_doc_gia.ReadOnly = true;
-            dgv_ds_doc_gia.RowHeadersWidth = 51;
+            dgv_ds_doc_gia.RightToLeft = RightToLeft.No;
+            dgv_ds_doc_gia.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             dgv_ds_doc_gia.Size = new Size(944, 252);
             dgv_ds_doc_gia.TabIndex = 0;
             // 
@@ -259,7 +260,7 @@
             txt_han_the.Multiline = true;
             txt_han_the.Name = "txt_han_the";
             txt_han_the.Size = new Size(414, 26);
-            txt_han_the.TabIndex = 28;
+            txt_han_the.TabIndex = 7;
             // 
             // label1
             // 
@@ -281,7 +282,7 @@
             txt_nam_sinh.Multiline = true;
             txt_nam_sinh.Name = "txt_nam_sinh";
             txt_nam_sinh.Size = new Size(414, 26);
-            txt_nam_sinh.TabIndex = 26;
+            txt_nam_sinh.TabIndex = 3;
             // 
             // label3
             // 
@@ -303,7 +304,7 @@
             txt_cmt.Multiline = true;
             txt_cmt.Name = "txt_cmt";
             txt_cmt.Size = new Size(414, 26);
-            txt_cmt.TabIndex = 18;
+            txt_cmt.TabIndex = 6;
             // 
             // label4
             // 
@@ -325,7 +326,7 @@
             txt_so_dien_thoai.Multiline = true;
             txt_so_dien_thoai.Name = "txt_so_dien_thoai";
             txt_so_dien_thoai.Size = new Size(414, 26);
-            txt_so_dien_thoai.TabIndex = 16;
+            txt_so_dien_thoai.TabIndex = 5;
             // 
             // label5
             // 
@@ -371,6 +372,7 @@
             btn_xoa.Text = "Xóa";
             btn_xoa.TextAlign = ContentAlignment.MiddleRight;
             btn_xoa.UseVisualStyleBackColor = true;
+            btn_xoa.Click += btn_xoa_Click;
             // 
             // btn_sua
             // 
@@ -388,6 +390,7 @@
             btn_sua.Text = "Sửa";
             btn_sua.TextAlign = ContentAlignment.MiddleRight;
             btn_sua.UseVisualStyleBackColor = true;
+            btn_sua.Click += btn_sua_Click;
             // 
             // btn_them
             // 
@@ -405,6 +408,7 @@
             btn_them.Text = "Thêm ";
             btn_them.TextAlign = ContentAlignment.MiddleRight;
             btn_them.UseVisualStyleBackColor = true;
+            btn_them.Click += btn_them_Click;
             // 
             // txt_ten_doc_gia
             // 
@@ -415,7 +419,7 @@
             txt_ten_doc_gia.Multiline = true;
             txt_ten_doc_gia.Name = "txt_ten_doc_gia";
             txt_ten_doc_gia.Size = new Size(414, 26);
-            txt_ten_doc_gia.TabIndex = 8;
+            txt_ten_doc_gia.TabIndex = 2;
             // 
             // label2
             // 
@@ -437,7 +441,7 @@
             txt_ma_doc_gia.Multiline = true;
             txt_ma_doc_gia.Name = "txt_ma_doc_gia";
             txt_ma_doc_gia.Size = new Size(414, 26);
-            txt_ma_doc_gia.TabIndex = 3;
+            txt_ma_doc_gia.TabIndex = 1;
             // 
             // label2222
             // 
@@ -463,6 +467,7 @@
             Name = "QL_Tai_Khoan_Doc_Gia";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "QL_Tai_Khoan_Doc_Gia";
+            Load += QL_Tai_Khoan_Doc_Gia_Load;
             panel1.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
