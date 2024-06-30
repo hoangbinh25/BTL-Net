@@ -50,7 +50,7 @@
             label5 = new Label();
             cbb_ngon_ngu = new ComboBox();
             label1 = new Label();
-            button6 = new Button();
+            btn_boqua = new Button();
             cbb_the_loai = new ComboBox();
             txt_ma_sach = new TextBox();
             groupBox1 = new GroupBox();
@@ -203,7 +203,7 @@
             panel2.Controls.Add(label5);
             panel2.Controls.Add(cbb_ngon_ngu);
             panel2.Controls.Add(label1);
-            panel2.Controls.Add(button6);
+            panel2.Controls.Add(btn_boqua);
             panel2.Controls.Add(btn_xoa);
             panel2.Controls.Add(btn_sua);
             panel2.Controls.Add(btn_them);
@@ -345,21 +345,22 @@
             label1.TabIndex = 13;
             label1.Text = "Ngôn Ngữ";
             // 
-            // button6
+            // btn_boqua
             // 
-            button6.Cursor = Cursors.Hand;
-            button6.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button6.ForeColor = Color.Black;
-            button6.Image = Properties.Resources.z5560539339010_ef792d56ebbc8998d0d577435891ae63;
-            button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(901, 416);
-            button6.Name = "button6";
-            button6.Padding = new Padding(10, 5, 5, 5);
-            button6.Size = new Size(101, 41);
-            button6.TabIndex = 12;
-            button6.Text = "Bỏ Qua";
-            button6.TextAlign = ContentAlignment.MiddleRight;
-            button6.UseVisualStyleBackColor = true;
+            btn_boqua.Cursor = Cursors.Hand;
+            btn_boqua.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_boqua.ForeColor = Color.Black;
+            btn_boqua.Image = Properties.Resources.z5560539339010_ef792d56ebbc8998d0d577435891ae63;
+            btn_boqua.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_boqua.Location = new Point(901, 416);
+            btn_boqua.Name = "btn_boqua";
+            btn_boqua.Padding = new Padding(10, 5, 5, 5);
+            btn_boqua.Size = new Size(101, 41);
+            btn_boqua.TabIndex = 12;
+            btn_boqua.Text = "Bỏ Qua";
+            btn_boqua.TextAlign = ContentAlignment.MiddleRight;
+            btn_boqua.UseVisualStyleBackColor = true;
+            btn_boqua.Click += btn_boqua_Click;
             // 
             // cbb_the_loai
             // 
@@ -507,7 +508,7 @@
         private Button btn_kho_sach;
         private Panel panel1;
         private Button btn_nhan_vien;
-        private Button button6;
+        private Button btn_boqua;
         private ComboBox cbb_the_loai;
         private TextBox txt_tac_gia;
         private Label label8;

@@ -160,5 +160,10 @@ namespace GUI
                 txt_so_luong.Text = row.Cells["so_luong"].Value.ToString();
             }
         }
+
+        private void btn_boqua_Click(object sender, EventArgs e)
+        {
+            ClearForm();
+        }
     }
 }

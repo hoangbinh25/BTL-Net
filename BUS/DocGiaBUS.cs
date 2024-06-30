@@ -26,7 +26,7 @@ namespace BUS
         }
         public static void DeleteDocGia(int maDocGia)
         {
-            DocGiaDAL.insertDocGia(maDocGia);
+            //DocGiaDAL.insertDocGia(maDocGia);
         }
     }
 }
