@@ -24,25 +24,27 @@ namespace GUI
             qlnv.ShowDialog();
         }
 
-        private void btn_kho_sach_Click(object sender, EventArgs e)
+        private void btn_kho_sach_Click_1(object sender, EventArgs e)
         {
             QL_Kho_Sach qlks = new QL_Kho_Sach();
             this.Hide();
             qlks.ShowDialog();
         }
 
-        private void btn_doc_gia_Click(object sender, EventArgs e)
+        private void btn_doc_gia_Click_1(object sender, EventArgs e)
         {
             QL_Tai_Khoan_Doc_Gia qldg = new QL_Tai_Khoan_Doc_Gia();
             this.Hide();
             qldg.ShowDialog();
         }
 
-        private void btn_muon_tra_Click(object sender, EventArgs e)
+        private void btn_muon_tra_Click_1(object sender, EventArgs e)
         {
             QL_TraMuon_Sach qlmt = new QL_TraMuon_Sach();
             this.Hide();
             qlmt.ShowDialog();
         }
+
+        
     }
 }
