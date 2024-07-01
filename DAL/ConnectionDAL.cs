@@ -14,9 +14,9 @@ namespace DAL
         public static SqlConnection Connect()
         {
 
-            //SqlConnection Conn = new SqlConnection(@"Data Source=LAPTOP-R4OFTQE1;Initial Catalog=QL_THUVIEN;Integrated Security=True;");
+            SqlConnection Conn = new SqlConnection(@"Data Source=LAPTOP-R4OFTQE1;Initial Catalog=QL_THUVIEN;Integrated Security=True;");
 
-            SqlConnection Conn = new SqlConnection(@"Data Source=THANHTUNG\THANHTUNG;Initial Catalog=QL_THUVIEN;Integrated Security=True;Encrypt=True;TrustServerCertificate=True");
+            //SqlConnection Conn = new SqlConnection(@"Data Source=THANHTUNG\THANHTUNG;Initial Catalog=QL_THUVIEN;Integrated Security=True;Encrypt=True;TrustServerCertificate=True");
 
             return Conn;
         }

@@ -22,11 +22,11 @@ namespace BUS
         }
         public static void UpdateDocGia(tbDocGia dg)
         {
-            DocGiaDAL.insertDocGia(dg);
+            DocGiaDAL.updateDocGia(dg);
         }
-        public static void DeleteDocGia(int maDocGia)
+        public static void DeleteDocGia(tbDocGia dg)
         {
-            //DocGiaDAL.insertDocGia(maDocGia);
+            DocGiaDAL.deleteDocGia(dg);
         }
     }
 }

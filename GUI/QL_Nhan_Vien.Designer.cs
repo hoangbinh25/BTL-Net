@@ -45,6 +45,7 @@
             label2 = new Label();
             txt_ten_nguoi_dung = new TextBox();
             label1 = new Label();
+            btn_ngon_ngu = new Button();
             panel1.SuspendLayout();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -70,6 +71,7 @@
             panel1.BackgroundImage = Properties.Resources.xanhtimdocmmm;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
             panel1.BorderStyle = BorderStyle.Fixed3D;
+            panel1.Controls.Add(btn_ngon_ngu);
             panel1.Controls.Add(btn_dang_xuat);
             panel1.Controls.Add(btn_muon_tra);
             panel1.Controls.Add(btn_doc_gia);
@@ -150,13 +152,9 @@
             // 
             groupBox2.Controls.Add(dgv_ds_nhan_vien);
             groupBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-
             groupBox2.ForeColor = Color.White;
-            groupBox2.Location = new Point(33, 291);
-
             groupBox2.Location = new Point(29, 218);
             groupBox2.Margin = new Padding(3, 2, 3, 2);
-
             groupBox2.Name = "groupBox2";
             groupBox2.Padding = new Padding(3, 2, 3, 2);
             groupBox2.RightToLeft = RightToLeft.Yes;
@@ -249,23 +247,14 @@
             // txt_mat_khau
             // 
             txt_mat_khau.BackColor = SystemColors.Control;
-
             txt_mat_khau.Font = new Font("Segoe UI", 12F);
-            txt_mat_khau.Location = new Point(26, 104);
-
             txt_mat_khau.Location = new Point(23, 78);
             txt_mat_khau.Margin = new Padding(3, 2, 3, 2);
-
             txt_mat_khau.Multiline = true;
             txt_mat_khau.Name = "txt_mat_khau";
             txt_mat_khau.Size = new Size(531, 26);
             txt_mat_khau.TabIndex = 8;
             // 
-
-            // cbb_vai_tro
-            
-            // 
-
             // label2
             // 
             label2.AutoSize = true;
@@ -280,13 +269,9 @@
             // txt_ten_nguoi_dung
             // 
             txt_ten_nguoi_dung.BackColor = SystemColors.Control;
-
             txt_ten_nguoi_dung.Font = new Font("Segoe UI", 12F);
-            txt_ten_nguoi_dung.Location = new Point(26, 33);
-
             txt_ten_nguoi_dung.Location = new Point(23, 25);
             txt_ten_nguoi_dung.Margin = new Padding(3, 2, 3, 2);
-
             txt_ten_nguoi_dung.Multiline = true;
             txt_ten_nguoi_dung.Name = "txt_ten_nguoi_dung";
             txt_ten_nguoi_dung.Size = new Size(531, 26);
@@ -302,6 +287,17 @@
             label1.Size = new Size(123, 21);
             label1.TabIndex = 2;
             label1.Text = "Tên Người Dùng";
+            // 
+            // btn_ngon_ngu
+            // 
+            btn_ngon_ngu.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_ngon_ngu.Location = new Point(12, 175);
+            btn_ngon_ngu.Margin = new Padding(3, 2, 3, 2);
+            btn_ngon_ngu.Name = "btn_ngon_ngu";
+            btn_ngon_ngu.Size = new Size(166, 30);
+            btn_ngon_ngu.TabIndex = 6;
+            btn_ngon_ngu.Text = "Ngôn ngữ";
+            btn_ngon_ngu.UseVisualStyleBackColor = true;
             // 
             // QL_Nhan_Vien
             // 
@@ -345,5 +341,6 @@
         private Button btn_xoa;
         private Button btn_sua;
         private Button btn_them;
+        private Button btn_ngon_ngu;
     }
 }

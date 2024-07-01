@@ -47,9 +47,16 @@ namespace GUI
             this.Hide();
             qlmt.ShowDialog();
         }
-        private void QL_Tai_Khoan_Doc_Gia_Load(object sender, EventArgs e)
+
+        public void loads_dgv()
         {
             dgv_ds_doc_gia.DataSource = DocGiaBUS.ds_docgia();
+        }
+
+        private void QL_Tai_Khoan_Doc_Gia_Load(object sender, EventArgs e)
+        {
+            loads_dgv();
+            ClearForm();
         }
 
         private void ClearForm()
@@ -77,7 +84,7 @@ namespace GUI
                 tbDocGia dg = new tbDocGia(maDocGia, tenDG, ngaySinh, DiaChi, Sdt, CMT, HanThe);
                 DocGiaBUS.InsertDocGia(dg);
                 MessageBox.Show("Bạn đã thêm " + tenDG + " thành công");
-                dgv_ds_doc_gia.DataSource = DocGiaBUS.ds_docgia();
+                loads_dgv();
                 ClearForm();
             }
             catch (Exception ex)
@@ -100,7 +107,7 @@ namespace GUI
                 tbDocGia dg = new tbDocGia(maDocGia, tenDG, ngaySinh, DiaChi, Sdt, CMT, HanThe);
                 DocGiaBUS.UpdateDocGia(dg);
                 MessageBox.Show("Bạn đã cập nhật " + tenDG + " thành công");
-                dgv_ds_doc_gia.DataSource = DocGiaBUS.ds_docgia();
+                loads_dgv();
                 ClearForm();
             }
             catch (Exception ex)
@@ -121,9 +128,9 @@ namespace GUI
                 string CMT = txt_cmt.Text;
                 String HanThe = txt_han_the.Text;
                 tbDocGia dg = new tbDocGia(maDocGia, tenDG, ngaySinh, DiaChi, Sdt, CMT, HanThe);
-                DocGiaBUS.DeleteDocGia(maDocGia);
+                DocGiaBUS.DeleteDocGia(dg);
                 MessageBox.Show("Bạn đã xóa " + tenDG + " thành công");
-                dgv_ds_doc_gia.DataSource = DocGiaBUS.ds_docgia();
+                loads_dgv();
                 ClearForm();
             }
             catch (Exception ex)
