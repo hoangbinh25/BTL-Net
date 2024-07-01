@@ -13,7 +13,7 @@ namespace DAL
     public class QuerySQL
     {
         public QuerySQL() { }
-
+        // các phương thức quản lý sách
         public static DataTable select_all_theLoai()
         {
             SqlConnection Conn = SqlConnectionData.Connect();

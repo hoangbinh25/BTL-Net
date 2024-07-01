@@ -178,6 +178,7 @@
             // 
             dgv_kho_sach.AllowUserToAddRows = false;
             dgv_kho_sach.AllowUserToDeleteRows = false;
+            dgv_kho_sach.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgv_kho_sach.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgv_kho_sach.Location = new Point(0, 27);
             dgv_kho_sach.Name = "dgv_kho_sach";

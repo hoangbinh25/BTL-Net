@@ -29,25 +29,20 @@
         private void InitializeComponent()
         {
             btn_tim_kiem = new Button();
-            txt_han_the = new TextBox();
-            label1 = new Label();
-            txt_nam_sinh = new TextBox();
-            label3 = new Label();
-            txt_dia_chi = new TextBox();
-            label8 = new Label();
+            dgv_ds_muon_tra = new DataGridView();
+            panel2 = new Panel();
+            label7 = new Label();
             txt_ngay_tra = new TextBox();
             label4 = new Label();
-            dgv_ds_muon_tra = new DataGridView();
             txt_ngay_muon = new TextBox();
-            panel2 = new Panel();
             label5 = new Label();
-            button6 = new Button();
-            btn_xoa = new Button();
-            btn_sua = new Button();
-            btn_them = new Button();
-            txt_ma_the_muon = new TextBox();
-            label2 = new Label();
+            btn_bo_qua_phieu_muon = new Button();
+            btn_xoa_phieu_muon = new Button();
+            btn_sua_phieu_muon = new Button();
+            btn_them_phieu_muon = new Button();
             txt_ma_doc_gia = new TextBox();
+            label2 = new Label();
+            txt_ma_phieu_muon = new TextBox();
             label2222 = new Label();
             btn_dang_xuat = new Button();
             btn_muon_tra = new Button();
@@ -57,6 +52,8 @@
             panel1 = new Panel();
             groupBox2 = new GroupBox();
             groupBox1 = new GroupBox();
+            label6 = new Label();
+            btn_xem_chi_tiet_phieu_muon = new Button();
             ((System.ComponentModel.ISupportInitialize)dgv_ds_muon_tra).BeginInit();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -71,7 +68,7 @@
             btn_tim_kiem.ForeColor = Color.Black;
             btn_tim_kiem.Image = Properties.Resources.favicon_16x16;
             btn_tim_kiem.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_tim_kiem.Location = new Point(775, 299);
+            btn_tim_kiem.Location = new Point(786, 165);
             btn_tim_kiem.Name = "btn_tim_kiem";
             btn_tim_kiem.Padding = new Padding(10, 5, 5, 5);
             btn_tim_kiem.Size = new Size(126, 41);
@@ -79,69 +76,59 @@
             btn_tim_kiem.Text = "Tìm Kiếm";
             btn_tim_kiem.TextAlign = ContentAlignment.MiddleRight;
             btn_tim_kiem.UseVisualStyleBackColor = true;
+            btn_tim_kiem.Click += btn_tim_kiem_Click;
             // 
-            // txt_han_the
+            // dgv_ds_muon_tra
             // 
-            txt_han_the.BackColor = SystemColors.Control;
-            txt_han_the.Font = new Font("Segoe UI", 12F);
-            txt_han_the.Location = new Point(563, 177);
-            txt_han_the.Multiline = true;
-            txt_han_the.Name = "txt_han_the";
-            txt_han_the.Size = new Size(473, 33);
-            txt_han_the.TabIndex = 28;
+            dgv_ds_muon_tra.AllowUserToAddRows = false;
+            dgv_ds_muon_tra.AllowUserToDeleteRows = false;
+            dgv_ds_muon_tra.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgv_ds_muon_tra.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgv_ds_muon_tra.Location = new Point(0, 33);
+            dgv_ds_muon_tra.Name = "dgv_ds_muon_tra";
+            dgv_ds_muon_tra.ReadOnly = true;
+            dgv_ds_muon_tra.RowHeadersWidth = 51;
+            dgv_ds_muon_tra.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgv_ds_muon_tra.Size = new Size(1079, 336);
+            dgv_ds_muon_tra.TabIndex = 0;
+            dgv_ds_muon_tra.RowEnter += dgv_ds_muon_tra_RowEnter;
             // 
-            // label1
+            // panel2
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(539, 147);
-            label1.Name = "label1";
-            label1.Size = new Size(83, 28);
-            label1.TabIndex = 27;
-            label1.Text = "Hạn Thẻ";
+            panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(label6);
+            panel2.Controls.Add(btn_xem_chi_tiet_phieu_muon);
+            panel2.Controls.Add(label7);
+            panel2.Controls.Add(btn_tim_kiem);
+            panel2.Controls.Add(txt_ngay_tra);
+            panel2.Controls.Add(label4);
+            panel2.Controls.Add(txt_ngay_muon);
+            panel2.Controls.Add(label5);
+            panel2.Controls.Add(btn_bo_qua_phieu_muon);
+            panel2.Controls.Add(btn_xoa_phieu_muon);
+            panel2.Controls.Add(btn_sua_phieu_muon);
+            panel2.Controls.Add(btn_them_phieu_muon);
+            panel2.Controls.Add(txt_ma_doc_gia);
+            panel2.Controls.Add(label2);
+            panel2.Controls.Add(txt_ma_phieu_muon);
+            panel2.Controls.Add(label2222);
+            panel2.Font = new Font("Segoe UI", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            panel2.ForeColor = SystemColors.ButtonFace;
+            panel2.Location = new Point(27, 40);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1079, 226);
+            panel2.TabIndex = 0;
             // 
-            // txt_nam_sinh
+            // label7
             // 
-            txt_nam_sinh.BackColor = SystemColors.Control;
-            txt_nam_sinh.Font = new Font("Segoe UI", 12F);
-            txt_nam_sinh.Location = new Point(26, 177);
-            txt_nam_sinh.Multiline = true;
-            txt_nam_sinh.Name = "txt_nam_sinh";
-            txt_nam_sinh.Size = new Size(473, 33);
-            txt_nam_sinh.TabIndex = 26;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(3, 147);
-            label3.Name = "label3";
-            label3.Size = new Size(97, 28);
-            label3.TabIndex = 25;
-            label3.Text = "Năm Sinh";
-            // 
-            // txt_dia_chi
-            // 
-            txt_dia_chi.BackColor = SystemColors.Control;
-            txt_dia_chi.Font = new Font("Segoe UI", 12F);
-            txt_dia_chi.Location = new Point(26, 245);
-            txt_dia_chi.Multiline = true;
-            txt_dia_chi.Name = "txt_dia_chi";
-            txt_dia_chi.Size = new Size(1009, 33);
-            txt_dia_chi.TabIndex = 24;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.ForeColor = Color.White;
-            label8.Location = new Point(3, 213);
-            label8.Name = "label8";
-            label8.Size = new Size(74, 28);
-            label8.TabIndex = 23;
-            label8.Text = "Địa Chỉ";
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 7.8F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(780, 141);
+            label7.Name = "label7";
+            label7.Size = new Size(132, 17);
+            label7.TabIndex = 41;
+            label7.Text = "Tìm Kiếm Phiếu Mượn\r\n";
             // 
             // txt_ngay_tra
             // 
@@ -164,18 +151,6 @@
             label4.TabIndex = 17;
             label4.Text = "Ngày Trả";
             // 
-            // dgv_ds_muon_tra
-            // 
-            dgv_ds_muon_tra.AllowUserToAddRows = false;
-            dgv_ds_muon_tra.AllowUserToDeleteRows = false;
-            dgv_ds_muon_tra.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv_ds_muon_tra.Location = new Point(0, 33);
-            dgv_ds_muon_tra.Name = "dgv_ds_muon_tra";
-            dgv_ds_muon_tra.ReadOnly = true;
-            dgv_ds_muon_tra.RowHeadersWidth = 51;
-            dgv_ds_muon_tra.Size = new Size(1079, 336);
-            dgv_ds_muon_tra.TabIndex = 0;
-            // 
             // txt_ngay_muon
             // 
             txt_ngay_muon.BackColor = SystemColors.Control;
@@ -185,34 +160,6 @@
             txt_ngay_muon.Name = "txt_ngay_muon";
             txt_ngay_muon.Size = new Size(473, 33);
             txt_ngay_muon.TabIndex = 16;
-            // 
-            // panel2
-            // 
-            panel2.BorderStyle = BorderStyle.FixedSingle;
-            panel2.Controls.Add(btn_tim_kiem);
-            panel2.Controls.Add(txt_han_the);
-            panel2.Controls.Add(label1);
-            panel2.Controls.Add(txt_nam_sinh);
-            panel2.Controls.Add(label3);
-            panel2.Controls.Add(txt_dia_chi);
-            panel2.Controls.Add(label8);
-            panel2.Controls.Add(txt_ngay_tra);
-            panel2.Controls.Add(label4);
-            panel2.Controls.Add(txt_ngay_muon);
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(button6);
-            panel2.Controls.Add(btn_xoa);
-            panel2.Controls.Add(btn_sua);
-            panel2.Controls.Add(btn_them);
-            panel2.Controls.Add(txt_ma_the_muon);
-            panel2.Controls.Add(label2);
-            panel2.Controls.Add(txt_ma_doc_gia);
-            panel2.Controls.Add(label2222);
-            panel2.ForeColor = SystemColors.ButtonFace;
-            panel2.Location = new Point(27, 40);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(1079, 351);
-            panel2.TabIndex = 0;
             // 
             // label5
             // 
@@ -225,107 +172,111 @@
             label5.TabIndex = 15;
             label5.Text = "Ngày Mượn ";
             // 
-            // button6
+            // btn_bo_qua_phieu_muon
             // 
-            button6.Cursor = Cursors.Hand;
-            button6.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button6.ForeColor = Color.Black;
-            button6.Image = Properties.Resources.z5560539339010_ef792d56ebbc8998d0d577435891ae63;
-            button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(935, 299);
-            button6.Name = "button6";
-            button6.Padding = new Padding(10, 5, 5, 5);
-            button6.Size = new Size(101, 41);
-            button6.TabIndex = 12;
-            button6.Text = "Bỏ Qua";
-            button6.TextAlign = ContentAlignment.MiddleRight;
-            button6.UseVisualStyleBackColor = true;
+            btn_bo_qua_phieu_muon.Cursor = Cursors.Hand;
+            btn_bo_qua_phieu_muon.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_bo_qua_phieu_muon.ForeColor = Color.Black;
+            btn_bo_qua_phieu_muon.Image = Properties.Resources.z5560539339010_ef792d56ebbc8998d0d577435891ae63;
+            btn_bo_qua_phieu_muon.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_bo_qua_phieu_muon.Location = new Point(932, 165);
+            btn_bo_qua_phieu_muon.Name = "btn_bo_qua_phieu_muon";
+            btn_bo_qua_phieu_muon.Padding = new Padding(10, 5, 5, 5);
+            btn_bo_qua_phieu_muon.Size = new Size(101, 41);
+            btn_bo_qua_phieu_muon.TabIndex = 12;
+            btn_bo_qua_phieu_muon.Text = "Bỏ Qua";
+            btn_bo_qua_phieu_muon.TextAlign = ContentAlignment.MiddleRight;
+            btn_bo_qua_phieu_muon.UseVisualStyleBackColor = true;
+            btn_bo_qua_phieu_muon.Click += btn_bo_qua_phieu_muon_Click;
             // 
-            // btn_xoa
+            // btn_xoa_phieu_muon
             // 
-            btn_xoa.Cursor = Cursors.Hand;
-            btn_xoa.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_xoa.ForeColor = Color.Black;
-            btn_xoa.Image = Properties.Resources.z5560539339010_ef792d56ebbc8998d0d577435891ae63;
-            btn_xoa.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_xoa.Location = new Point(325, 299);
-            btn_xoa.Name = "btn_xoa";
-            btn_xoa.Padding = new Padding(10, 5, 5, 5);
-            btn_xoa.Size = new Size(101, 41);
-            btn_xoa.TabIndex = 11;
-            btn_xoa.Text = "Xóa";
-            btn_xoa.TextAlign = ContentAlignment.MiddleRight;
-            btn_xoa.UseVisualStyleBackColor = true;
+            btn_xoa_phieu_muon.Cursor = Cursors.Hand;
+            btn_xoa_phieu_muon.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_xoa_phieu_muon.ForeColor = Color.Black;
+            btn_xoa_phieu_muon.Image = Properties.Resources.z5560539339010_ef792d56ebbc8998d0d577435891ae63;
+            btn_xoa_phieu_muon.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_xoa_phieu_muon.Location = new Point(327, 165);
+            btn_xoa_phieu_muon.Name = "btn_xoa_phieu_muon";
+            btn_xoa_phieu_muon.Padding = new Padding(10, 5, 5, 5);
+            btn_xoa_phieu_muon.Size = new Size(101, 41);
+            btn_xoa_phieu_muon.TabIndex = 11;
+            btn_xoa_phieu_muon.Text = "Xóa";
+            btn_xoa_phieu_muon.TextAlign = ContentAlignment.MiddleRight;
+            btn_xoa_phieu_muon.UseVisualStyleBackColor = true;
+            btn_xoa_phieu_muon.Click += btn_xoa_phieu_muon_Click;
             // 
-            // btn_sua
+            // btn_sua_phieu_muon
             // 
-            btn_sua.Cursor = Cursors.Hand;
-            btn_sua.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_sua.ForeColor = Color.Black;
-            btn_sua.Image = Properties.Resources.z5560539359740_9337aa11269aeccd6e939ece18cfa20e;
-            btn_sua.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_sua.Location = new Point(175, 299);
-            btn_sua.Name = "btn_sua";
-            btn_sua.Padding = new Padding(10, 5, 5, 5);
-            btn_sua.Size = new Size(101, 41);
-            btn_sua.TabIndex = 10;
-            btn_sua.Text = "Sửa";
-            btn_sua.TextAlign = ContentAlignment.MiddleRight;
-            btn_sua.UseVisualStyleBackColor = true;
+            btn_sua_phieu_muon.Cursor = Cursors.Hand;
+            btn_sua_phieu_muon.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_sua_phieu_muon.ForeColor = Color.Black;
+            btn_sua_phieu_muon.Image = Properties.Resources.z5560539359740_9337aa11269aeccd6e939ece18cfa20e;
+            btn_sua_phieu_muon.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_sua_phieu_muon.Location = new Point(177, 165);
+            btn_sua_phieu_muon.Name = "btn_sua_phieu_muon";
+            btn_sua_phieu_muon.Padding = new Padding(10, 5, 5, 5);
+            btn_sua_phieu_muon.Size = new Size(101, 41);
+            btn_sua_phieu_muon.TabIndex = 10;
+            btn_sua_phieu_muon.Text = "Sửa";
+            btn_sua_phieu_muon.TextAlign = ContentAlignment.MiddleRight;
+            btn_sua_phieu_muon.UseVisualStyleBackColor = true;
+            btn_sua_phieu_muon.Click += btn_sua_phieu_muon_Click;
             // 
-            // btn_them
+            // btn_them_phieu_muon
             // 
-            btn_them.Cursor = Cursors.Hand;
-            btn_them.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_them.ForeColor = Color.Black;
-            btn_them.Image = Properties.Resources.z5560539359591_8726bde7817e7680733c216c1b763b9d;
-            btn_them.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_them.Location = new Point(26, 299);
-            btn_them.Name = "btn_them";
-            btn_them.Padding = new Padding(10, 5, 5, 5);
-            btn_them.Size = new Size(101, 41);
-            btn_them.TabIndex = 9;
-            btn_them.Text = "Thêm ";
-            btn_them.TextAlign = ContentAlignment.MiddleRight;
-            btn_them.UseVisualStyleBackColor = true;
+            btn_them_phieu_muon.Cursor = Cursors.Hand;
+            btn_them_phieu_muon.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_them_phieu_muon.ForeColor = Color.Black;
+            btn_them_phieu_muon.Image = Properties.Resources.z5560539359591_8726bde7817e7680733c216c1b763b9d;
+            btn_them_phieu_muon.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_them_phieu_muon.Location = new Point(28, 165);
+            btn_them_phieu_muon.Name = "btn_them_phieu_muon";
+            btn_them_phieu_muon.Padding = new Padding(10, 5, 5, 5);
+            btn_them_phieu_muon.Size = new Size(101, 41);
+            btn_them_phieu_muon.TabIndex = 9;
+            btn_them_phieu_muon.Text = "Thêm ";
+            btn_them_phieu_muon.TextAlign = ContentAlignment.MiddleRight;
+            btn_them_phieu_muon.UseVisualStyleBackColor = true;
+            btn_them_phieu_muon.Click += btn_them_phieu_muon_Click;
             // 
-            // txt_ma_the_muon
+            // txt_ma_doc_gia
             // 
-            txt_ma_the_muon.BackColor = SystemColors.Control;
-            txt_ma_the_muon.Font = new Font("Segoe UI", 12F);
-            txt_ma_the_muon.Location = new Point(26, 104);
-            txt_ma_the_muon.Multiline = true;
-            txt_ma_the_muon.Name = "txt_ma_the_muon";
-            txt_ma_the_muon.Size = new Size(473, 33);
-            txt_ma_the_muon.TabIndex = 8;
+            txt_ma_doc_gia.BackColor = SystemColors.Control;
+            txt_ma_doc_gia.Font = new Font("Segoe UI", 12F);
+            txt_ma_doc_gia.Location = new Point(26, 104);
+            txt_ma_doc_gia.Multiline = true;
+            txt_ma_doc_gia.Name = "txt_ma_doc_gia";
+            txt_ma_doc_gia.Size = new Size(473, 33);
+            txt_ma_doc_gia.TabIndex = 8;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(3, 73);
+            label2.Location = new Point(3, 1);
             label2.Name = "label2";
-            label2.Size = new Size(134, 28);
+            label2.Size = new Size(151, 28);
             label2.TabIndex = 4;
-            label2.Text = "Mã Thẻ Mượn";
+            label2.Text = "Mã Phiếu Mượn";
             // 
-            // txt_ma_doc_gia
+            // txt_ma_phieu_muon
             // 
-            txt_ma_doc_gia.BackColor = SystemColors.Control;
-            txt_ma_doc_gia.Font = new Font("Segoe UI", 12F);
-            txt_ma_doc_gia.Location = new Point(26, 33);
-            txt_ma_doc_gia.Multiline = true;
-            txt_ma_doc_gia.Name = "txt_ma_doc_gia";
-            txt_ma_doc_gia.Size = new Size(473, 33);
-            txt_ma_doc_gia.TabIndex = 3;
+            txt_ma_phieu_muon.BackColor = SystemColors.Control;
+            txt_ma_phieu_muon.Font = new Font("Segoe UI", 12F);
+            txt_ma_phieu_muon.Location = new Point(26, 33);
+            txt_ma_phieu_muon.Multiline = true;
+            txt_ma_phieu_muon.Name = "txt_ma_phieu_muon";
+            txt_ma_phieu_muon.Size = new Size(473, 33);
+            txt_ma_phieu_muon.TabIndex = 3;
             // 
             // label2222
             // 
             label2222.AutoSize = true;
             label2222.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2222.ForeColor = Color.White;
-            label2222.Location = new Point(3, 1);
+            label2222.Location = new Point(3, 71);
             label2222.Name = "label2222";
             label2222.Size = new Size(114, 28);
             label2222.TabIndex = 2;
@@ -334,7 +285,7 @@
             // btn_dang_xuat
             // 
             btn_dang_xuat.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_dang_xuat.Location = new Point(14, 737);
+            btn_dang_xuat.Location = new Point(14, 541);
             btn_dang_xuat.Name = "btn_dang_xuat";
             btn_dang_xuat.Size = new Size(190, 33);
             btn_dang_xuat.TabIndex = 4;
@@ -398,15 +349,15 @@
             panel1.ForeColor = SystemColors.ControlText;
             panel1.Location = new Point(0, -3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(227, 792);
+            panel1.Size = new Size(227, 641);
             panel1.TabIndex = 10;
             // 
             // groupBox2
             // 
             groupBox2.Controls.Add(dgv_ds_muon_tra);
             groupBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBox2.ForeColor = Color.White;
-            groupBox2.Location = new Point(27, 412);
+            groupBox2.ForeColor = Color.Black;
+            groupBox2.Location = new Point(31, 272);
             groupBox2.Name = "groupBox2";
             groupBox2.RightToLeft = RightToLeft.Yes;
             groupBox2.Size = new Size(1079, 360);
@@ -423,10 +374,36 @@
             groupBox1.ForeColor = Color.White;
             groupBox1.Location = new Point(233, -3);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1141, 792);
+            groupBox1.Size = new Size(1141, 643);
             groupBox1.TabIndex = 11;
             groupBox1.TabStop = false;
             groupBox1.Text = "Quản Lý Mượn - Trả";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 7.8F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(551, 143);
+            label6.Name = "label6";
+            label6.Size = new Size(223, 17);
+            label6.TabIndex = 51;
+            label6.Text = "Chi Tiết Phiếu Mượn Theo Phiếu Mượn";
+            // 
+            // btn_xem_chi_tiet_phieu_muon
+            // 
+            btn_xem_chi_tiet_phieu_muon.Cursor = Cursors.Hand;
+            btn_xem_chi_tiet_phieu_muon.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_xem_chi_tiet_phieu_muon.ForeColor = Color.Black;
+            btn_xem_chi_tiet_phieu_muon.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_xem_chi_tiet_phieu_muon.Location = new Point(679, 165);
+            btn_xem_chi_tiet_phieu_muon.Name = "btn_xem_chi_tiet_phieu_muon";
+            btn_xem_chi_tiet_phieu_muon.Padding = new Padding(10, 5, 5, 5);
+            btn_xem_chi_tiet_phieu_muon.Size = new Size(83, 41);
+            btn_xem_chi_tiet_phieu_muon.TabIndex = 50;
+            btn_xem_chi_tiet_phieu_muon.Text = "Xem";
+            btn_xem_chi_tiet_phieu_muon.UseVisualStyleBackColor = true;
+            btn_xem_chi_tiet_phieu_muon.Click += btn_xem_chi_tiet_phieu_muon_Click_1;
             // 
             // QL_TraMuon_Sach
             // 
@@ -434,11 +411,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.xanhtim2;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1374, 788);
+            ClientSize = new Size(1374, 648);
             Controls.Add(panel1);
             Controls.Add(groupBox1);
             Name = "QL_TraMuon_Sach";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "QL_TraMuon_Sach";
+            Load += QL_TraMuon_Sach_Load;
             ((System.ComponentModel.ISupportInitialize)dgv_ds_muon_tra).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
@@ -451,26 +430,12 @@
         #endregion
 
         private Button btn_tim_kiem;
-        private TextBox txt_han_the;
-        private Label label1;
-        private TextBox txt_nam_sinh;
-        private Label label3;
-        private TextBox txt_dia_chi;
-        private Label label8;
-        private TextBox txt_ngay_tra;
-        private Label label4;
         private DataGridView dgv_ds_muon_tra;
-        private TextBox txt_ngay_muon;
         private Panel panel2;
-        private Label label5;
-        private Button button6;
-        private Button btn_xoa;
-        private Button btn_sua;
-        private Button btn_them;
-        private TextBox txt_ma_the_muon;
-        private Label label2;
-        private TextBox txt_ma_doc_gia;
-        private Label label2222;
+        private Button btn_bo_qua_phieu_muon;
+        private Button btn_xoa_phieu_muon;
+        private Button btn_sua_phieu_muon;
+        private Button btn_them_phieu_muon;
         private Button btn_dang_xuat;
         private Button btn_muon_tra;
         private Button btn_doc_gia;
@@ -479,5 +444,16 @@
         private Panel panel1;
         private GroupBox groupBox2;
         private GroupBox groupBox1;
+        private TextBox txt_ngay_tra;
+        private Label label4;
+        private TextBox txt_ngay_muon;
+        private Label label5;
+        private TextBox txt_ma_doc_gia;
+        private Label label2;
+        private TextBox txt_ma_phieu_muon;
+        private Label label2222;
+        private Label label7;
+        private Label label6;
+        private Button btn_xem_chi_tiet_phieu_muon;
     }
 }

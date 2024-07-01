@@ -12,7 +12,7 @@ namespace GUI
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
 
-            Application.Run(new QL_Kho_Sach());
+            Application.Run(new QL_TraMuon_Sach());
 
             //Application.Run(new QL_Tai_Khoan_Doc_Gia());
 

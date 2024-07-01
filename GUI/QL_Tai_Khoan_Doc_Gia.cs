@@ -22,7 +22,7 @@ namespace GUI
 
         private void btn_nhan_vien_Click(object sender, EventArgs e)
         {
-            QL_Nhan_Vien qlnv = new QL_Nhan_Vien();
+            QL_chi_tiet_muon qlnv = new QL_chi_tiet_muon();
             this.Hide();
             qlnv.ShowDialog();
         }
