@@ -124,7 +124,7 @@ namespace GUI
         private void btn_xem_chi_tiet_phieu_muon_Click_1(object sender, EventArgs e)
         {
             int phieu_muon_id = int.Parse(txt_ma_phieu_muon.Text);
-            QL_chi_tiet_muon qlChiTietMuon = new QL_chi_tiet_muon();
+            QL_chi_tiet_muon qlChiTietMuon = new QL_chi_tiet_muon(phieu_muon_id);
             qlChiTietMuon.ShowDialog();
         }
     }

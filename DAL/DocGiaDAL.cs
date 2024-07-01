@@ -59,12 +59,12 @@ namespace DAL
             Conn.Close();
         }
 
-        public static void deleteDocGia(int maDocGia)
+        public static void deleteDocGia(tbDocGia dg)
         {
             SqlConnection Conn = SqlConnectionData.Connect();
             SqlCommand cmd = new SqlCommand("proc_DeleteDocGia", Conn);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@MaDocGia", SqlDbType.Int).Value = maDocGia;
+            cmd.Parameters.Add("@MaDocGia", SqlDbType.Int).Value = dg.MaDG;
             Conn.Open();
             cmd.ExecuteNonQuery();
             Conn.Close();

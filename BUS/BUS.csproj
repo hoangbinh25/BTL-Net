@@ -41,9 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="MuonTraBUS.cs" />
     <Compile Include="SachBUS.cs" />
     <Compile Include="DocGiaBUS.cs" />
+=======
+    <Compile Include="NgonNguBUS.cs" />
+    <Compile Include="SachBUS.cs" />
+    <Compile Include="DocGiaBUS.cs" />
+    <Compile Include="SearchBookBUS.cs" />
+>>>>>>> 6cc4869ffdc33e3f67bc11fcb421dc57a8132ef4
     <Compile Include="TaiKhoanBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -44,7 +44,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tbDocGia.cs" />
     <Compile Include="tblSach.cs" />
+<<<<<<< HEAD
     <Compile Include="tbMuonTra.cs" />
+=======
+    <Compile Include="tbNgonNgu.cs" />
+>>>>>>> 6cc4869ffdc33e3f67bc11fcb421dc57a8132ef4
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

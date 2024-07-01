@@ -45,10 +45,11 @@
             // 
             txt_ten_nguoi_dung.BackColor = SystemColors.Control;
             txt_ten_nguoi_dung.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txt_ten_nguoi_dung.Location = new Point(21, 103);
+            txt_ten_nguoi_dung.Location = new Point(18, 77);
+            txt_ten_nguoi_dung.Margin = new Padding(3, 2, 3, 2);
             txt_ten_nguoi_dung.Multiline = true;
             txt_ten_nguoi_dung.Name = "txt_ten_nguoi_dung";
-            txt_ten_nguoi_dung.Size = new Size(564, 53);
+            txt_ten_nguoi_dung.Size = new Size(494, 41);
             txt_ten_nguoi_dung.TabIndex = 1;
             // 
             // groupBox1
@@ -58,9 +59,11 @@
             groupBox1.Controls.Add(panel3);
             groupBox1.Font = new Font("Times New Roman", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             groupBox1.ForeColor = SystemColors.Highlight;
-            groupBox1.Location = new Point(261, 11);
+            groupBox1.Location = new Point(228, 8);
+            groupBox1.Margin = new Padding(3, 2, 3, 2);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(601, 531);
+            groupBox1.Padding = new Padding(3, 2, 3, 2);
+            groupBox1.Size = new Size(526, 398);
             groupBox1.TabIndex = 4;
             groupBox1.TabStop = false;
             groupBox1.Text = "Đăng Nhập";
@@ -74,9 +77,10 @@
             panel3.Controls.Add(label2);
             panel3.Controls.Add(txt_ten_nguoi_dung);
             panel3.Controls.Add(label1);
-            panel3.Location = new Point(14, 52);
+            panel3.Location = new Point(12, 39);
+            panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(601, 477);
+            panel3.Size = new Size(526, 358);
             panel3.TabIndex = 5;
             // 
             // lb_dang_ki
@@ -84,9 +88,9 @@
             lb_dang_ki.AutoSize = true;
             lb_dang_ki.Font = new Font("Segoe UI Semilight", 10.8F, FontStyle.Italic, GraphicsUnit.Point, 0);
             lb_dang_ki.ForeColor = SystemColors.Highlight;
-            lb_dang_ki.Location = new Point(497, 580);
+            lb_dang_ki.Location = new Point(435, 435);
             lb_dang_ki.Name = "lb_dang_ki";
-            lb_dang_ki.Size = new Size(136, 25);
+            lb_dang_ki.Size = new Size(110, 20);
             lb_dang_ki.TabIndex = 6;
             lb_dang_ki.Text = "Đăng Kí Tại Đây";
             // 
@@ -96,11 +100,11 @@
             btn_dang_nhap.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_dang_nhap.ForeColor = SystemColors.Window;
             btn_dang_nhap.Image = Properties.Resources.xanhtim2;
-            btn_dang_nhap.Location = new Point(209, 337);
+            btn_dang_nhap.Location = new Point(182, 270);
             btn_dang_nhap.Margin = new Padding(0);
             btn_dang_nhap.Name = "btn_dang_nhap";
-            btn_dang_nhap.Padding = new Padding(10, 5, 10, 5);
-            btn_dang_nhap.Size = new Size(176, 53);
+            btn_dang_nhap.Padding = new Padding(9, 4, 9, 4);
+            btn_dang_nhap.Size = new Size(154, 40);
             btn_dang_nhap.TabIndex = 0;
             btn_dang_nhap.Text = "Đăng Nhập";
             btn_dang_nhap.UseVisualStyleBackColor = false;
@@ -110,11 +114,12 @@
             // 
             txt_mat_khau.BackColor = SystemColors.Control;
             txt_mat_khau.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txt_mat_khau.Location = new Point(21, 259);
+            txt_mat_khau.Location = new Point(18, 194);
+            txt_mat_khau.Margin = new Padding(3, 2, 3, 2);
             txt_mat_khau.Multiline = true;
             txt_mat_khau.Name = "txt_mat_khau";
             txt_mat_khau.PasswordChar = '*';
-            txt_mat_khau.Size = new Size(564, 53);
+            txt_mat_khau.Size = new Size(494, 41);
             txt_mat_khau.TabIndex = 2;
             txt_mat_khau.UseSystemPasswordChar = true;
             // 
@@ -123,9 +128,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.Highlight;
-            label2.Location = new Point(17, 205);
+            label2.Location = new Point(15, 154);
             label2.Name = "label2";
-            label2.Size = new Size(96, 28);
+            label2.Size = new Size(76, 21);
             label2.TabIndex = 2;
             label2.Text = "Mật Khẩu";
             // 
@@ -134,9 +139,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.Highlight;
-            label1.Location = new Point(17, 57);
+            label1.Location = new Point(15, 43);
             label1.Name = "label1";
-            label1.Size = new Size(155, 28);
+            label1.Size = new Size(123, 21);
             label1.TabIndex = 0;
             label1.Text = "Tên Người Dùng";
             // 
@@ -148,18 +153,20 @@
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.ForeColor = SystemColors.ControlText;
             panel1.Location = new Point(-1, 1);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(259, 741);
+            panel1.Size = new Size(227, 557);
             panel1.TabIndex = 3;
             // 
             // form_dang_nhap
             // 
             AcceptButton = btn_dang_nhap;
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(882, 553);
+            ClientSize = new Size(772, 415);
             Controls.Add(groupBox1);
             Controls.Add(panel1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "form_dang_nhap";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
